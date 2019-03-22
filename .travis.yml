@@ -1,0 +1,18 @@
+language: node.js
+node_js:
+- '10'
+cache:
+  directories:
+  - node_modules
+install:
+- npm install
+- npm run build
+script:
+- npm test
+deploy:
+  provider: heroku
+  api_key:
+    secure: UzscJ42YXCN0iHmCfXxMH7mB2UH23xvLwf9DJMB6eTJnzksJ+lI83RzO0RPO/JS0XdcoOEFrlrKmeVIa0iB4Zc0ktkaKYoxnZ22hMyr4Ns4VGpK0Pzwpv/f7r6gSPGfKVnS+VaAOPBXdb5Xw+VDY22/ePcPHFsn0xC86u1mDr5ViV7o4Qg+A8+N7e5HUSN69WSehXwRWGWLKaLdphhHrgDy1PFTWBOTUhRUxsm7JHaNDs09dg4TwTL7gx1koHPqZ5ZtmbY6dTlFqOAeMl3ELDPonh5qbnC9elWvRS14MvxzGtzhM56S/eTgs0wKEWfLTIXdYbCuSZ0YVXQIB4FjOG/hgranznvKHpe9+J1PgrMT9tnCbEp+KsxrOwDfC+yUuWxOYXO59wW+huSzjlZ9sd69xIb5gwkXlXXbu/nwsviEMlR75wiYiCTnGl6HxEdV86iP+dWcOBe3Y86g85W61APGbM9Sm0sjin7yhT9q0jy625jP+UYI/r7kDveINqkI+UzL74WccWmSsXyzsan302mwhbH0GA5LhhfuJUuf2fIy0xAb/kSTLuvOwIAajE79quoW5VgjcJRlELcDMn3XYo911zghATUu4S8S5yYbbCglgkBebHd4UwCZIUI5vkLy4jAcqdmTzOb9yt/VrOmWIZSZw0/4KPJVVL2dC1F3MWbY=
+  app: anneshandmade
+  on:
+    repo: benjaminadk/annes-handmade-frontend
