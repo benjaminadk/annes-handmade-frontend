@@ -73,7 +73,10 @@ export default class Search extends React.Component {
                   ))}
                   {!items.length && !loading && executed && (
                     <DropDownItem>
-                      No Results for <span> "{inputValue}"</span>
+                      <span/>
+                      <span>
+                        No Results for <span className='term'> "{inputValue}"</span>
+                      </span>
                     </DropDownItem>
                   )}
                 </DropDown>

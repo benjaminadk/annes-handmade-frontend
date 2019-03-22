@@ -66,7 +66,7 @@ export const DropDownItem = styled.div`
     margin-right: 20px;
     border: 1px solid ${props => props.theme.grey[2]};
   }
-  span {
+  .term {
     color: ${props => darken(0.2, props.theme.primary)};
     margin-left: 0.5rem;
   }

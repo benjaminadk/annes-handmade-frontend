@@ -51,7 +51,10 @@ export default class Page extends React.Component {
         <User>
           {({ data, loading }) => {
             if (loading) {
-              return <Loading />
+              return <>
+              <GlobalStyles/>
+              <Loading />
+              </>
             }
             const user = data ? data.me : null
             return (
