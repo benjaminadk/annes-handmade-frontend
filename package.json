@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development PORT=4000 node server.js",
     "test": "cross-env NODE_ENV=test jest --verbose --watch",
+    "test:ci": "jest --updateSnapshot",
     "build": "next build",
     "start": "node server.js",
     "heroku-postbuild": "next build"
