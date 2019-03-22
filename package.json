@@ -1,0 +1,78 @@
+{
+  "name": "annes-handmade-prisma-frontend",
+  "version": "1.0.0",
+  "description": "Anne's Handmade e-commerce application.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development PORT=4000 node server.js",
+    "test": "cross-env NODE_ENV=test jest --verbose --watch",
+    "build": "next build",
+    "start": "node server.js",
+    "heroku-postbuild": "next build"
+  },
+  "keywords": [],
+  "author": {
+    "name": "benjaminadk",
+    "email": "benjaminadk@gmail.com",
+    "url": "https://github.com/benjaminadk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benjaminadk/annes-handmade-prisma.git"
+  },
+  "license": "ISC",
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.1.0"
+  },
+  "dependencies": {
+    "@babel/core": "7.4.0",
+    "apollo-boost": "0.1.22",
+    "apollo-client": "2.4.7",
+    "axios": "0.18.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-plugin-polished": "1.1.0",
+    "babel-plugin-styled-components": "1.7.1",
+    "date-fns": "2.0.0-alpha.7",
+    "downshift": "3.1.5",
+    "express": "4.16.4",
+    "graphql": "14.0.2",
+    "graphql-tag": "2.10.0",
+    "heroku-ssl-redirect": "0.0.4",
+    "lodash.debounce": "4.0.8",
+    "lodash.isequal": "4.5.0",
+    "match-sorter": "2.3.0",
+    "next": "8.0.3",
+    "next-with-apollo": "3.3.0",
+    "nprogress": "0.2.0",
+    "polished": "3.0.3",
+    "prop-types": "15.6.2",
+    "react": "16.8.4",
+    "react-adopt": "0.6.0",
+    "react-apollo": "2.3.1",
+    "react-dom": "16.8.4",
+    "react-google-login": "5.0.2",
+    "react-image-magnify": "2.7.4",
+    "react-images": "0.5.19",
+    "react-stripe-checkout": "2.6.3",
+    "react-table": "6.8.6",
+    "react-transition-group": "2.5.0",
+    "styled-components": "4.1.3",
+    "styled-icons": "7.4.2",
+    "waait": "1.0.2"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "babel-plugin-module-resolver": "3.1.1",
+    "casual": "1.5.19",
+    "cross-env": "5.2.0",
+    "enzyme": "3.9.0",
+    "enzyme-adapter-react-16": "1.11.2",
+    "enzyme-to-json": "3.3.5",
+    "graphql-tools": "4.0.3",
+    "http-proxy-middleware": "0.19.1",
+    "jest": "23.6.0",
+    "jest-styled-components": "6.3.1",
+    "jest-transform-graphql": "2.1.0"
+  }
+}

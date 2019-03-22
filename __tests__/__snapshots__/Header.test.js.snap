@@ -1,0 +1,1243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header/> renders a sign up button when user is signed out 1`] = `
+Array [
+  .c3 {
+  display: grid;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 button {
+  width: 75%;
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding: 10px 0;
+  background: #3D3D3D;
+  color: #FAFAFA;
+  border: none;
+  border-left: 5px solid #FF80B5;
+  outline: none;
+  cursor: pointer;
+}
+
+.c3 button:hover {
+  background: #333333;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2 input {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  font-size: 1.75rem;
+  font-family: 'Raleway';
+}
+
+.c2 input.loading {
+  -webkit-animation: kILLFT 0.5s ease-in-out infinite alternate;
+  animation: kILLFT 0.5s ease-in-out infinite alternate;
+}
+
+.c2 input:focus {
+  outline: none;
+}
+
+.c2 input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://s3-us-west-1.amazonaws.com/shopping-site/assets/close.png');
+  background-size: cover;
+}
+
+.c0 .bar {
+  display: grid;
+  grid-template-columns: auto 2fr 3fr 1fr 1fr;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background: #29FFA6;
+}
+
+.c0 .links {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+  font-size: 2rem;
+}
+
+.c1 {
+  width: 7.5rem;
+  height: 7.5rem;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.c1 img {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+@media (max-width:36em) {
+  .c3 {
+    grid-column: 3 / 5;
+  }
+}
+
+@media (max-width:36em) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media (max-width:36em) {
+  .c0 .bar {
+    grid-template-columns: auto 2fr 1fr 1fr;
+  }
+}
+
+@media (max-width:36em) {
+  .c0 .links {
+    grid-template-columns: auto;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width:36em) {
+  .c0 .links .about {
+    display: none;
+  }
+}
+
+@media (max-width:36em) {
+  .c1 {
+    margin-left: 1rem;
+  }
+}
+
+<Header__HeaderStyles
+    data-test="header"
+  >
+    <StyledComponent
+      data-test="header"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Header__HeaderStyles-sc-17cz6yj-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              ".bar{display:grid;grid-template-columns:auto 2fr 3fr 1fr 1fr;align-items:center;position:fixed;z-index:2;width:100%;background:",
+              [Function],
+              ";",
+              "@media (max-width:",
+              "36",
+              "em){",
+              "
+      grid-template-columns: auto 2fr 1fr 1fr;
+    ",
+              "}",
+              "}.links{display:grid;grid-template-columns:repeat(2,1fr);justify-items:center;font-size:2rem;",
+              "@media (max-width:",
+              "36",
+              "em){",
+              "
+      grid-template-columns: auto; 
+      font-size: 3rem;
+    ",
+              "}",
+              " .about{",
+              "@media (max-width:",
+              "36",
+              "em){",
+              "
+        display: none;
+      ",
+              "}",
+              "}}",
+            ],
+          },
+          "displayName": "Header__HeaderStyles",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Header__HeaderStyles-sc-17cz6yj-0",
+          "target": "header",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <header
+        className="c0"
+        data-test="header"
+      >
+        <div
+          className="bar"
+        >
+          <Link
+            href="/"
+            prefetch={true}
+          >
+            <Header__Logo
+              onClick={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Header__Logo-sc-17cz6yj-1",
+                      "isStatic": true,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "width:7.5rem;height:7.5rem;margin-left:3rem;cursor:pointer;",
+                        "@media (max-width:",
+                        "36",
+                        "em){",
+                        "
+    margin-left: 1rem;
+  ",
+                        "}",
+                        " img{width:7.5rem;height:7.5rem;}",
+                      ],
+                    },
+                    "displayName": "Header__Logo",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Header__Logo-sc-17cz6yj-1",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+              >
+                <div
+                  className="c1"
+                  onClick={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                >
+                  <img
+                    src="https://s3-us-west-1.amazonaws.com/shopping-site/assets/buddha-logo.png"
+                  />
+                </div>
+              </StyledComponent>
+            </Header__Logo>
+          </Link>
+          <div
+            className="links"
+          >
+            <Link
+              href="/catalog"
+              prefetch={true}
+            >
+              <a
+                href="/catalog"
+                onClick={[Function]}
+              >
+                Catalog
+              </a>
+            </Link>
+            <Link
+              href="/about"
+              prefetch={true}
+            >
+              <a
+                className="about"
+                href="/about"
+                onClick={[Function]}
+              >
+                About
+              </a>
+            </Link>
+          </div>
+          <Search>
+            <Search__SearchStyles>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Search__SearchStyles-sc-1t08phd-0",
+                      "isStatic": true,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "position:relative;input{width:100%;padding:10px;border:0;font-size:1.75rem;font-family:'Raleway';&.loading{animation:",
+                        Keyframes {
+                          "id": "sc-keyframes-kILLFT",
+                          "inject": [Function],
+                          "name": "kILLFT",
+                          "rules": Array [
+                            "@-webkit-keyframes kILLFT{from{box-shadow:0 0 5px 1px yellow;}to{box-shadow:0 0 10px 1px yellow;}}",
+                            "@keyframes kILLFT{from{box-shadow:0 0 5px 1px yellow;}to{box-shadow:0 0 10px 1px yellow;}}",
+                          ],
+                          "toString": [Function],
+                        },
+                        " 0.5s ease-in-out infinite alternate;}&:focus{outline:none;}&::-webkit-search-cancel-button{-webkit-appearance:none;width:20px;height:20px;background-image:url('https://s3-us-west-1.amazonaws.com/shopping-site/assets/close.png');background-size:cover;}}",
+                        "@media (max-width:",
+                        "36",
+                        "em){",
+                        "
+    display: none;
+  ",
+                        "}",
+                      ],
+                    },
+                    "displayName": "Search__SearchStyles",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Search__SearchStyles-sc-1t08phd-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div
+                  className="c2"
+                >
+                  <Downshift
+                    defaultHighlightedIndex={null}
+                    defaultIsOpen={false}
+                    environment={[Window]}
+                    getA11yStatusMessage={[Function]}
+                    itemToString={[Function]}
+                    onChange={[Function]}
+                    onInputValueChange={[Function]}
+                    onOuterClick={[Function]}
+                    onSelect={[Function]}
+                    onStateChange={[Function]}
+                    onUserAction={[Function]}
+                    scrollIntoView={[Function]}
+                    selectedItemChanged={[Function]}
+                    stateReducer={[Function]}
+                    suppressRefError={false}
+                  >
+                    <div
+                      aria-expanded={false}
+                      aria-haspopup="listbox"
+                      aria-labelledby="downshift-0-label"
+                      aria-owns={null}
+                      role="combobox"
+                    >
+                      <ApolloConsumer>
+                        <input
+                          aria-activedescendant={null}
+                          aria-autocomplete="list"
+                          aria-controls={null}
+                          aria-labelledby="downshift-0-label"
+                          autoComplete="off"
+                          className=""
+                          id="search"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onKeyDown={[Function]}
+                          placeholder="Search for Jewelry 💎"
+                          type="search"
+                          value=""
+                        />
+                      </ApolloConsumer>
+                    </div>
+                  </Downshift>
+                </div>
+              </StyledComponent>
+            </Search__SearchStyles>
+          </Search>
+          <SignupButton>
+            <SignupButton__SignupButtonStyles>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "SignupButton__SignupButtonStyles-sc-1fsgqzz-0",
+                      "isStatic": false,
+                      "lastClassName": "c3",
+                      "rules": Array [
+                        "display:grid;justify-items:center;align-items:center;",
+                        "@media (max-width:",
+                        "36",
+                        "em){",
+                        "
+    grid-column: ",
+                        [Function],
+                        ";
+  ",
+                        "}",
+                        " button{width:75%;font-size:1.75rem;font-weight:bold;padding:10px 0;background:",
+                        [Function],
+                        ";color:",
+                        [Function],
+                        ";border:none;border-left:5px solid ",
+                        [Function],
+                        ";outline:none;cursor:pointer;&:hover{background:",
+                        [Function],
+                        ";}}",
+                      ],
+                    },
+                    "displayName": "SignupButton__SignupButtonStyles",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "SignupButton__SignupButtonStyles-sc-1fsgqzz-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div
+                  className="c3"
+                >
+                  <Link
+                    href="/signup"
+                    prefetch={true}
+                  >
+                    <button
+                      onClick={[Function]}
+                    >
+                      Sign Up
+                    </button>
+                  </Link>
+                </div>
+              </StyledComponent>
+            </SignupButton__SignupButtonStyles>
+          </SignupButton>
+        </div>
+      </header>
+    </StyledComponent>
+  </Header__HeaderStyles>,
+  .c3 {
+  display: grid;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 button {
+  width: 75%;
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding: 10px 0;
+  background: #3D3D3D;
+  color: #FAFAFA;
+  border: none;
+  border-left: 5px solid #FF80B5;
+  outline: none;
+  cursor: pointer;
+}
+
+.c3 button:hover {
+  background: #333333;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2 input {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  font-size: 1.75rem;
+  font-family: 'Raleway';
+}
+
+.c2 input.loading {
+  -webkit-animation: kILLFT 0.5s ease-in-out infinite alternate;
+  animation: kILLFT 0.5s ease-in-out infinite alternate;
+}
+
+.c2 input:focus {
+  outline: none;
+}
+
+.c2 input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://s3-us-west-1.amazonaws.com/shopping-site/assets/close.png');
+  background-size: cover;
+}
+
+.c0 .bar {
+  display: grid;
+  grid-template-columns: auto 2fr 3fr 1fr 1fr;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background: #29FFA6;
+}
+
+.c0 .links {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+  font-size: 2rem;
+}
+
+.c1 {
+  width: 7.5rem;
+  height: 7.5rem;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.c1 img {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+@media (max-width:36em) {
+  .c3 {
+    grid-column: 3 / 5;
+  }
+}
+
+@media (max-width:36em) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media (max-width:36em) {
+  .c0 .bar {
+    grid-template-columns: auto 2fr 1fr 1fr;
+  }
+}
+
+@media (max-width:36em) {
+  .c0 .links {
+    grid-template-columns: auto;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width:36em) {
+  .c0 .links .about {
+    display: none;
+  }
+}
+
+@media (max-width:36em) {
+  .c1 {
+    margin-left: 1rem;
+  }
+}
+
+<StyledComponent
+    data-test="header"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Header__HeaderStyles-sc-17cz6yj-0",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            ".bar{display:grid;grid-template-columns:auto 2fr 3fr 1fr 1fr;align-items:center;position:fixed;z-index:2;width:100%;background:",
+            [Function],
+            ";",
+            "@media (max-width:",
+            "36",
+            "em){",
+            "
+      grid-template-columns: auto 2fr 1fr 1fr;
+    ",
+            "}",
+            "}.links{display:grid;grid-template-columns:repeat(2,1fr);justify-items:center;font-size:2rem;",
+            "@media (max-width:",
+            "36",
+            "em){",
+            "
+      grid-template-columns: auto; 
+      font-size: 3rem;
+    ",
+            "}",
+            " .about{",
+            "@media (max-width:",
+            "36",
+            "em){",
+            "
+        display: none;
+      ",
+            "}",
+            "}}",
+          ],
+        },
+        "displayName": "Header__HeaderStyles",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Header__HeaderStyles-sc-17cz6yj-0",
+        "target": "header",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <header
+      className="c0"
+      data-test="header"
+    >
+      <div
+        className="bar"
+      >
+        <Link
+          href="/"
+          prefetch={true}
+        >
+          <Header__Logo
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Header__Logo-sc-17cz6yj-1",
+                    "isStatic": true,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "width:7.5rem;height:7.5rem;margin-left:3rem;cursor:pointer;",
+                      "@media (max-width:",
+                      "36",
+                      "em){",
+                      "
+    margin-left: 1rem;
+  ",
+                      "}",
+                      " img{width:7.5rem;height:7.5rem;}",
+                    ],
+                  },
+                  "displayName": "Header__Logo",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Header__Logo-sc-17cz6yj-1",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              onClick={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              <div
+                className="c1"
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+              >
+                <img
+                  src="https://s3-us-west-1.amazonaws.com/shopping-site/assets/buddha-logo.png"
+                />
+              </div>
+            </StyledComponent>
+          </Header__Logo>
+        </Link>
+        <div
+          className="links"
+        >
+          <Link
+            href="/catalog"
+            prefetch={true}
+          >
+            <a
+              href="/catalog"
+              onClick={[Function]}
+            >
+              Catalog
+            </a>
+          </Link>
+          <Link
+            href="/about"
+            prefetch={true}
+          >
+            <a
+              className="about"
+              href="/about"
+              onClick={[Function]}
+            >
+              About
+            </a>
+          </Link>
+        </div>
+        <Search>
+          <Search__SearchStyles>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Search__SearchStyles-sc-1t08phd-0",
+                    "isStatic": true,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "position:relative;input{width:100%;padding:10px;border:0;font-size:1.75rem;font-family:'Raleway';&.loading{animation:",
+                      Keyframes {
+                        "id": "sc-keyframes-kILLFT",
+                        "inject": [Function],
+                        "name": "kILLFT",
+                        "rules": Array [
+                          "@-webkit-keyframes kILLFT{from{box-shadow:0 0 5px 1px yellow;}to{box-shadow:0 0 10px 1px yellow;}}",
+                          "@keyframes kILLFT{from{box-shadow:0 0 5px 1px yellow;}to{box-shadow:0 0 10px 1px yellow;}}",
+                        ],
+                        "toString": [Function],
+                      },
+                      " 0.5s ease-in-out infinite alternate;}&:focus{outline:none;}&::-webkit-search-cancel-button{-webkit-appearance:none;width:20px;height:20px;background-image:url('https://s3-us-west-1.amazonaws.com/shopping-site/assets/close.png');background-size:cover;}}",
+                      "@media (max-width:",
+                      "36",
+                      "em){",
+                      "
+    display: none;
+  ",
+                      "}",
+                    ],
+                  },
+                  "displayName": "Search__SearchStyles",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Search__SearchStyles-sc-1t08phd-0",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="c2"
+              >
+                <Downshift
+                  defaultHighlightedIndex={null}
+                  defaultIsOpen={false}
+                  environment={[Window]}
+                  getA11yStatusMessage={[Function]}
+                  itemToString={[Function]}
+                  onChange={[Function]}
+                  onInputValueChange={[Function]}
+                  onOuterClick={[Function]}
+                  onSelect={[Function]}
+                  onStateChange={[Function]}
+                  onUserAction={[Function]}
+                  scrollIntoView={[Function]}
+                  selectedItemChanged={[Function]}
+                  stateReducer={[Function]}
+                  suppressRefError={false}
+                >
+                  <div
+                    aria-expanded={false}
+                    aria-haspopup="listbox"
+                    aria-labelledby="downshift-0-label"
+                    aria-owns={null}
+                    role="combobox"
+                  >
+                    <ApolloConsumer>
+                      <input
+                        aria-activedescendant={null}
+                        aria-autocomplete="list"
+                        aria-controls={null}
+                        aria-labelledby="downshift-0-label"
+                        autoComplete="off"
+                        className=""
+                        id="search"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onKeyDown={[Function]}
+                        placeholder="Search for Jewelry 💎"
+                        type="search"
+                        value=""
+                      />
+                    </ApolloConsumer>
+                  </div>
+                </Downshift>
+              </div>
+            </StyledComponent>
+          </Search__SearchStyles>
+        </Search>
+        <SignupButton>
+          <SignupButton__SignupButtonStyles>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "SignupButton__SignupButtonStyles-sc-1fsgqzz-0",
+                    "isStatic": false,
+                    "lastClassName": "c3",
+                    "rules": Array [
+                      "display:grid;justify-items:center;align-items:center;",
+                      "@media (max-width:",
+                      "36",
+                      "em){",
+                      "
+    grid-column: ",
+                      [Function],
+                      ";
+  ",
+                      "}",
+                      " button{width:75%;font-size:1.75rem;font-weight:bold;padding:10px 0;background:",
+                      [Function],
+                      ";color:",
+                      [Function],
+                      ";border:none;border-left:5px solid ",
+                      [Function],
+                      ";outline:none;cursor:pointer;&:hover{background:",
+                      [Function],
+                      ";}}",
+                    ],
+                  },
+                  "displayName": "SignupButton__SignupButtonStyles",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "SignupButton__SignupButtonStyles-sc-1fsgqzz-0",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="c3"
+              >
+                <Link
+                  href="/signup"
+                  prefetch={true}
+                >
+                  <button
+                    onClick={[Function]}
+                  >
+                    Sign Up
+                  </button>
+                </Link>
+              </div>
+            </StyledComponent>
+          </SignupButton__SignupButtonStyles>
+        </SignupButton>
+      </div>
+    </header>
+  </StyledComponent>,
+  .c3 {
+  display: grid;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 button {
+  width: 75%;
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding: 10px 0;
+  background: #3D3D3D;
+  color: #FAFAFA;
+  border: none;
+  border-left: 5px solid #FF80B5;
+  outline: none;
+  cursor: pointer;
+}
+
+.c3 button:hover {
+  background: #333333;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2 input {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  font-size: 1.75rem;
+  font-family: 'Raleway';
+}
+
+.c2 input.loading {
+  -webkit-animation: kILLFT 0.5s ease-in-out infinite alternate;
+  animation: kILLFT 0.5s ease-in-out infinite alternate;
+}
+
+.c2 input:focus {
+  outline: none;
+}
+
+.c2 input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://s3-us-west-1.amazonaws.com/shopping-site/assets/close.png');
+  background-size: cover;
+}
+
+.c0 .bar {
+  display: grid;
+  grid-template-columns: auto 2fr 3fr 1fr 1fr;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background: #29FFA6;
+}
+
+.c0 .links {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+  font-size: 2rem;
+}
+
+.c1 {
+  width: 7.5rem;
+  height: 7.5rem;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.c1 img {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+@media (max-width:36em) {
+  .c3 {
+    grid-column: 3 / 5;
+  }
+}
+
+@media (max-width:36em) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media (max-width:36em) {
+  .c0 .bar {
+    grid-template-columns: auto 2fr 1fr 1fr;
+  }
+}
+
+@media (max-width:36em) {
+  .c0 .links {
+    grid-template-columns: auto;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width:36em) {
+  .c0 .links .about {
+    display: none;
+  }
+}
+
+@media (max-width:36em) {
+  .c1 {
+    margin-left: 1rem;
+  }
+}
+
+<header
+    className="c0"
+    data-test="header"
+  >
+    <div
+      className="bar"
+    >
+      <Link
+        href="/"
+        prefetch={true}
+      >
+        <Header__Logo
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Header__Logo-sc-17cz6yj-1",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "width:7.5rem;height:7.5rem;margin-left:3rem;cursor:pointer;",
+                    "@media (max-width:",
+                    "36",
+                    "em){",
+                    "
+    margin-left: 1rem;
+  ",
+                    "}",
+                    " img{width:7.5rem;height:7.5rem;}",
+                  ],
+                },
+                "displayName": "Header__Logo",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Header__Logo-sc-17cz6yj-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+          >
+            <div
+              className="c1"
+              onClick={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              <img
+                src="https://s3-us-west-1.amazonaws.com/shopping-site/assets/buddha-logo.png"
+              />
+            </div>
+          </StyledComponent>
+        </Header__Logo>
+      </Link>
+      <div
+        className="links"
+      >
+        <Link
+          href="/catalog"
+          prefetch={true}
+        >
+          <a
+            href="/catalog"
+            onClick={[Function]}
+          >
+            Catalog
+          </a>
+        </Link>
+        <Link
+          href="/about"
+          prefetch={true}
+        >
+          <a
+            className="about"
+            href="/about"
+            onClick={[Function]}
+          >
+            About
+          </a>
+        </Link>
+      </div>
+      <Search>
+        <Search__SearchStyles>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Search__SearchStyles-sc-1t08phd-0",
+                  "isStatic": true,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "position:relative;input{width:100%;padding:10px;border:0;font-size:1.75rem;font-family:'Raleway';&.loading{animation:",
+                    Keyframes {
+                      "id": "sc-keyframes-kILLFT",
+                      "inject": [Function],
+                      "name": "kILLFT",
+                      "rules": Array [
+                        "@-webkit-keyframes kILLFT{from{box-shadow:0 0 5px 1px yellow;}to{box-shadow:0 0 10px 1px yellow;}}",
+                        "@keyframes kILLFT{from{box-shadow:0 0 5px 1px yellow;}to{box-shadow:0 0 10px 1px yellow;}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 0.5s ease-in-out infinite alternate;}&:focus{outline:none;}&::-webkit-search-cancel-button{-webkit-appearance:none;width:20px;height:20px;background-image:url('https://s3-us-west-1.amazonaws.com/shopping-site/assets/close.png');background-size:cover;}}",
+                    "@media (max-width:",
+                    "36",
+                    "em){",
+                    "
+    display: none;
+  ",
+                    "}",
+                  ],
+                },
+                "displayName": "Search__SearchStyles",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Search__SearchStyles-sc-1t08phd-0",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c2"
+            >
+              <Downshift
+                defaultHighlightedIndex={null}
+                defaultIsOpen={false}
+                environment={[Window]}
+                getA11yStatusMessage={[Function]}
+                itemToString={[Function]}
+                onChange={[Function]}
+                onInputValueChange={[Function]}
+                onOuterClick={[Function]}
+                onSelect={[Function]}
+                onStateChange={[Function]}
+                onUserAction={[Function]}
+                scrollIntoView={[Function]}
+                selectedItemChanged={[Function]}
+                stateReducer={[Function]}
+                suppressRefError={false}
+              >
+                <div
+                  aria-expanded={false}
+                  aria-haspopup="listbox"
+                  aria-labelledby="downshift-0-label"
+                  aria-owns={null}
+                  role="combobox"
+                >
+                  <ApolloConsumer>
+                    <input
+                      aria-activedescendant={null}
+                      aria-autocomplete="list"
+                      aria-controls={null}
+                      aria-labelledby="downshift-0-label"
+                      autoComplete="off"
+                      className=""
+                      id="search"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onKeyDown={[Function]}
+                      placeholder="Search for Jewelry 💎"
+                      type="search"
+                      value=""
+                    />
+                  </ApolloConsumer>
+                </div>
+              </Downshift>
+            </div>
+          </StyledComponent>
+        </Search__SearchStyles>
+      </Search>
+      <SignupButton>
+        <SignupButton__SignupButtonStyles>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "SignupButton__SignupButtonStyles-sc-1fsgqzz-0",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "display:grid;justify-items:center;align-items:center;",
+                    "@media (max-width:",
+                    "36",
+                    "em){",
+                    "
+    grid-column: ",
+                    [Function],
+                    ";
+  ",
+                    "}",
+                    " button{width:75%;font-size:1.75rem;font-weight:bold;padding:10px 0;background:",
+                    [Function],
+                    ";color:",
+                    [Function],
+                    ";border:none;border-left:5px solid ",
+                    [Function],
+                    ";outline:none;cursor:pointer;&:hover{background:",
+                    [Function],
+                    ";}}",
+                  ],
+                },
+                "displayName": "SignupButton__SignupButtonStyles",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "SignupButton__SignupButtonStyles-sc-1fsgqzz-0",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c3"
+            >
+              <Link
+                href="/signup"
+                prefetch={true}
+              >
+                <button
+                  onClick={[Function]}
+                >
+                  Sign Up
+                </button>
+              </Link>
+            </div>
+          </StyledComponent>
+        </SignupButton__SignupButtonStyles>
+      </SignupButton>
+    </div>
+  </header>,
+]
+`;

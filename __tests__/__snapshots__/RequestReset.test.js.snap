@@ -1,0 +1,298 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RequestReset /> renders and matches snapshot 1`] = `
+.c0 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  max-width: 37.5rem;
+  border: 1px solid #E0E0E0;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
+}
+
+.c0 .header {
+  background: #333333;
+  color: white;
+  border-left: 10px solid #FF80B5;
+  font-size: 2.75rem;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.c0 fieldset {
+  background: #FAFAFA;
+  border: none;
+  padding: 0rem 1rem 2rem 1rem;
+}
+
+.c0 fieldset .switches {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 fieldset .divider {
+  margin: 1rem 0.5rem 0;
+}
+
+.c0 fieldset .switch {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.c0 fieldset .switch:hover {
+  color: #00c271;
+}
+
+.c0 .actions {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  font-family: 'Raleway';
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #29FFA6;
+  color: #3D3D3D;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  font-size: 1.75rem;
+  padding: 1rem;
+}
+
+.c2:hover {
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.09);
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.c1 input,
+.c1 textarea,
+.c1 select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid #333333;
+}
+
+.c1 input:focus,
+.c1 textarea:focus,
+.c1 select:focus {
+  outline: 3px solid #00c271;
+}
+
+@media (max-width:36em) {
+  .c2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width:36em) {
+  .c2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width:36em) {
+  .c1 input,
+  .c1 textarea,
+  .c1 select {
+    width: 100%;
+  }
+}
+
+<form
+  className="c0"
+  data-test="request-reset"
+  method="POST"
+  onSubmit={[Function]}
+>
+  <div
+    className="header"
+  >
+    Reset Password
+  </div>
+  <fieldset
+    aria-busy={false}
+    disabled={false}
+  >
+    <div
+      className="switches"
+    >
+      <span
+        className="switch"
+        onClick={[Function]}
+      >
+        Sign In
+      </span>
+      <span
+        className="divider"
+      >
+          |  
+      </span>
+      <span
+        className="switch"
+        onClick={[Function]}
+      >
+        Sign Up
+      </span>
+    </div>
+    <Input
+      label="Email"
+      name="email"
+      onChange={[Function]}
+      type="email"
+      value=""
+    >
+      <Input__InputStyles
+        htmlFor="email"
+      >
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Input__InputStyles-kqflgr-0",
+                "isStatic": false,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "display:block;margin-bottom:2rem;input,textarea,select{width:100%;padding:0.5rem;font-size:1.5rem;border:1px solid ",
+                  [Function],
+                  ";&:focus{outline:3px solid ",
+                  [Function],
+                  ";}",
+                  "@media (max-width:",
+                  "36",
+                  "em){",
+                  "
+      width: ",
+                  [Function],
+                  ";
+    ",
+                  "}",
+                  "}",
+                ],
+              },
+              "displayName": "Input__InputStyles",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Input__InputStyles-kqflgr-0",
+              "target": "label",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          htmlFor="email"
+        >
+          <label
+            className="c1"
+            htmlFor="email"
+          >
+            Email
+            <input
+              name="email"
+              onChange={[Function]}
+              spellCheck={false}
+              type="email"
+              value=""
+            />
+          </label>
+        </StyledComponent>
+      </Input__InputStyles>
+    </Input>
+    <DisplayError />
+    <Form__FormButton
+      type="submit"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Form__FormButton-sc-4g0ja8-1",
+              "isStatic": false,
+              "lastClassName": "c2",
+              "rules": Array [
+                "font-family:'Raleway';font-size:2.5rem;padding:0.5rem;border:none;outline:none;cursor:pointer;background:",
+                [Function],
+                ";color:",
+                [Function],
+                ";transition:all 0.5s ease-in-out;&:hover{box-shadow:",
+                [Function],
+                ";}",
+                "@media (max-width:",
+                "36",
+                "em){",
+                "
+    font-size: 2rem;
+  ",
+                "}",
+                "width:100%;font-size:1.75rem;padding:1rem;",
+                "@media (max-width:",
+                "36",
+                "em){",
+                "
+    font-size: 1.25rem;
+  ",
+                "}",
+              ],
+            },
+            "displayName": "Form__FormButton",
+            "foldedComponentIds": Array [
+              "GreenButton-sc-1bjesnv-0",
+            ],
+            "render": [Function],
+            "styledComponentId": "Form__FormButton-sc-4g0ja8-1",
+            "target": "button",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        type="submit"
+      >
+        <button
+          className="c2"
+          type="submit"
+        >
+          Request
+           Password Reset
+        </button>
+      </StyledComponent>
+    </Form__FormButton>
+  </fieldset>
+</form>
+`;

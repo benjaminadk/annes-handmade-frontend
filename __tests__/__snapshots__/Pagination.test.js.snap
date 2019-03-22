@@ -1,0 +1,1929 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination /> displays a loading message 1`] = `
+Array [
+  .c0 {
+  display: inline-grid;
+  grid-template-columns: repeat(5,auto);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  border: 1px solid #E0E0E0;
+  border-left: 10px solid #FF80B5;
+  text-align: center;
+  background: #FAFAFA;
+  margin: 3rem auto;
+}
+
+.c0 > * {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 1.5rem 3rem;
+  border-right: 1px solid #E0E0E0;
+}
+
+.c0 > *:nth-child(odd):hover {
+  background: #ffe6f0;
+}
+
+.c0 > *:last-child {
+  border-right: 0;
+}
+
+.c0 a[aria-disabled='true'] {
+  color: grey;
+  pointer-events: none;
+}
+
+@media (max-width:36em) {
+  .c0 > * {
+    padding: .5rem .5rem;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1.1rem;
+  }
+}
+
+<Pagination__PaginationStyles
+    data-test="pagination"
+  >
+    <StyledComponent
+      data-test="pagination"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Pagination__PaginationStyles-utzsbm-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-grid;grid-template-columns:repeat(5,auto);align-items:stretch;justify-content:center;align-content:center;border:1px solid ",
+              [Function],
+              ";border-left:10px solid ",
+              [Function],
+              ";text-align:center;background:",
+              [Function],
+              ";margin:3rem auto;& > *{display:flex;align-items:center;margin:0;padding:1.5rem 3rem;border-right:1px solid ",
+              [Function],
+              ";",
+              "@media (max-width:",
+              "36",
+              "em){",
+              "
+      padding: .5rem .5rem; 
+      align-self: center; 
+      font-size: 1.1rem;
+    ",
+              "}",
+              " &:nth-child(odd):hover{background:",
+              [Function],
+              ";}&:last-child{border-right:0;}}a[aria-disabled='true']{color:grey;pointer-events:none;}",
+            ],
+          },
+          "displayName": "Pagination__PaginationStyles",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Pagination__PaginationStyles-utzsbm-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+        data-test="pagination"
+      >
+        <Query
+          query={
+            Object {
+              "definitions": Array [
+                Object {
+                  "directives": Array [],
+                  "kind": "OperationDefinition",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "PAGINATION_QUERY",
+                  },
+                  "operation": "query",
+                  "selectionSet": Object {
+                    "kind": "SelectionSet",
+                    "selections": Array [
+                      Object {
+                        "alias": undefined,
+                        "arguments": Array [
+                          Object {
+                            "kind": "Argument",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "where",
+                            },
+                            "value": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "where",
+                              },
+                            },
+                          },
+                        ],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "productsCount",
+                        },
+                        "selectionSet": Object {
+                          "kind": "SelectionSet",
+                          "selections": Array [
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "count",
+                              },
+                              "selectionSet": undefined,
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                  "variableDefinitions": Array [
+                    Object {
+                      "defaultValue": undefined,
+                      "kind": "VariableDefinition",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "ProductWhereInput",
+                        },
+                      },
+                      "variable": Object {
+                        "kind": "Variable",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "where",
+                        },
+                      },
+                    },
+                  ],
+                },
+              ],
+              "kind": "Document",
+              "loc": Object {
+                "end": 112,
+                "start": 0,
+              },
+            }
+          }
+          variables={
+            Object {
+              "where": Object {
+                "bead": "RED_JASPER",
+                "sold": false,
+                "variant": "NECKLACE",
+              },
+            }
+          }
+        >
+          <p>
+            Loading...
+          </p>
+        </Query>
+      </div>
+    </StyledComponent>
+  </Pagination__PaginationStyles>,
+  .c0 {
+  display: inline-grid;
+  grid-template-columns: repeat(5,auto);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  border: 1px solid #E0E0E0;
+  border-left: 10px solid #FF80B5;
+  text-align: center;
+  background: #FAFAFA;
+  margin: 3rem auto;
+}
+
+.c0 > * {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 1.5rem 3rem;
+  border-right: 1px solid #E0E0E0;
+}
+
+.c0 > *:nth-child(odd):hover {
+  background: #ffe6f0;
+}
+
+.c0 > *:last-child {
+  border-right: 0;
+}
+
+.c0 a[aria-disabled='true'] {
+  color: grey;
+  pointer-events: none;
+}
+
+@media (max-width:36em) {
+  .c0 > * {
+    padding: .5rem .5rem;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1.1rem;
+  }
+}
+
+<StyledComponent
+    data-test="pagination"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Pagination__PaginationStyles-utzsbm-0",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "display:inline-grid;grid-template-columns:repeat(5,auto);align-items:stretch;justify-content:center;align-content:center;border:1px solid ",
+            [Function],
+            ";border-left:10px solid ",
+            [Function],
+            ";text-align:center;background:",
+            [Function],
+            ";margin:3rem auto;& > *{display:flex;align-items:center;margin:0;padding:1.5rem 3rem;border-right:1px solid ",
+            [Function],
+            ";",
+            "@media (max-width:",
+            "36",
+            "em){",
+            "
+      padding: .5rem .5rem; 
+      align-self: center; 
+      font-size: 1.1rem;
+    ",
+            "}",
+            " &:nth-child(odd):hover{background:",
+            [Function],
+            ";}&:last-child{border-right:0;}}a[aria-disabled='true']{color:grey;pointer-events:none;}",
+          ],
+        },
+        "displayName": "Pagination__PaginationStyles",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Pagination__PaginationStyles-utzsbm-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="c0"
+      data-test="pagination"
+    >
+      <Query
+        query={
+          Object {
+            "definitions": Array [
+              Object {
+                "directives": Array [],
+                "kind": "OperationDefinition",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "PAGINATION_QUERY",
+                },
+                "operation": "query",
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "where",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "where",
+                            },
+                          },
+                        },
+                      ],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "productsCount",
+                      },
+                      "selectionSet": Object {
+                        "kind": "SelectionSet",
+                        "selections": Array [
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "count",
+                            },
+                            "selectionSet": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+                "variableDefinitions": Array [
+                  Object {
+                    "defaultValue": undefined,
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NamedType",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "ProductWhereInput",
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "where",
+                      },
+                    },
+                  },
+                ],
+              },
+            ],
+            "kind": "Document",
+            "loc": Object {
+              "end": 112,
+              "start": 0,
+            },
+          }
+        }
+        variables={
+          Object {
+            "where": Object {
+              "bead": "RED_JASPER",
+              "sold": false,
+              "variant": "NECKLACE",
+            },
+          }
+        }
+      >
+        <p>
+          Loading...
+        </p>
+      </Query>
+    </div>
+  </StyledComponent>,
+  .c0 {
+  display: inline-grid;
+  grid-template-columns: repeat(5,auto);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  border: 1px solid #E0E0E0;
+  border-left: 10px solid #FF80B5;
+  text-align: center;
+  background: #FAFAFA;
+  margin: 3rem auto;
+}
+
+.c0 > * {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 1.5rem 3rem;
+  border-right: 1px solid #E0E0E0;
+}
+
+.c0 > *:nth-child(odd):hover {
+  background: #ffe6f0;
+}
+
+.c0 > *:last-child {
+  border-right: 0;
+}
+
+.c0 a[aria-disabled='true'] {
+  color: grey;
+  pointer-events: none;
+}
+
+@media (max-width:36em) {
+  .c0 > * {
+    padding: .5rem .5rem;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1.1rem;
+  }
+}
+
+<div
+    className="c0"
+    data-test="pagination"
+  >
+    <Query
+      query={
+        Object {
+          "definitions": Array [
+            Object {
+              "directives": Array [],
+              "kind": "OperationDefinition",
+              "name": Object {
+                "kind": "Name",
+                "value": "PAGINATION_QUERY",
+              },
+              "operation": "query",
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [
+                      Object {
+                        "kind": "Argument",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "where",
+                        },
+                        "value": Object {
+                          "kind": "Variable",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "where",
+                          },
+                        },
+                      },
+                    ],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "productsCount",
+                    },
+                    "selectionSet": Object {
+                      "kind": "SelectionSet",
+                      "selections": Array [
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "count",
+                          },
+                          "selectionSet": undefined,
+                        },
+                      ],
+                    },
+                  },
+                ],
+              },
+              "variableDefinitions": Array [
+                Object {
+                  "defaultValue": undefined,
+                  "kind": "VariableDefinition",
+                  "type": Object {
+                    "kind": "NamedType",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "ProductWhereInput",
+                    },
+                  },
+                  "variable": Object {
+                    "kind": "Variable",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "where",
+                    },
+                  },
+                },
+              ],
+            },
+          ],
+          "kind": "Document",
+          "loc": Object {
+            "end": 112,
+            "start": 0,
+          },
+        }
+      }
+      variables={
+        Object {
+          "where": Object {
+            "bead": "RED_JASPER",
+            "sold": false,
+            "variant": "NECKLACE",
+          },
+        }
+      }
+    >
+      <p>
+        Loading...
+      </p>
+    </Query>
+  </div>,
+]
+`;
+
+exports[`<Pagination /> renders pagination for 36 items 1`] = `
+Array [
+  .c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c0 {
+  display: inline-grid;
+  grid-template-columns: repeat(5,auto);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  border: 1px solid #E0E0E0;
+  border-left: 10px solid #FF80B5;
+  text-align: center;
+  background: #FAFAFA;
+  margin: 3rem auto;
+}
+
+.c0 > * {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 1.5rem 3rem;
+  border-right: 1px solid #E0E0E0;
+}
+
+.c0 > *:nth-child(odd):hover {
+  background: #ffe6f0;
+}
+
+.c0 > *:last-child {
+  border-right: 0;
+}
+
+.c0 a[aria-disabled='true'] {
+  color: grey;
+  pointer-events: none;
+}
+
+@media (max-width:36em) {
+  .c0 > * {
+    padding: .5rem .5rem;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1.1rem;
+  }
+}
+
+<Pagination__PaginationStyles
+    data-test="pagination"
+  >
+    <StyledComponent
+      data-test="pagination"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Pagination__PaginationStyles-utzsbm-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-grid;grid-template-columns:repeat(5,auto);align-items:stretch;justify-content:center;align-content:center;border:1px solid ",
+              [Function],
+              ";border-left:10px solid ",
+              [Function],
+              ";text-align:center;background:",
+              [Function],
+              ";margin:3rem auto;& > *{display:flex;align-items:center;margin:0;padding:1.5rem 3rem;border-right:1px solid ",
+              [Function],
+              ";",
+              "@media (max-width:",
+              "36",
+              "em){",
+              "
+      padding: .5rem .5rem; 
+      align-self: center; 
+      font-size: 1.1rem;
+    ",
+              "}",
+              " &:nth-child(odd):hover{background:",
+              [Function],
+              ";}&:last-child{border-right:0;}}a[aria-disabled='true']{color:grey;pointer-events:none;}",
+            ],
+          },
+          "displayName": "Pagination__PaginationStyles",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Pagination__PaginationStyles-utzsbm-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+        data-test="pagination"
+      >
+        <Query
+          query={
+            Object {
+              "definitions": Array [
+                Object {
+                  "directives": Array [],
+                  "kind": "OperationDefinition",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "PAGINATION_QUERY",
+                  },
+                  "operation": "query",
+                  "selectionSet": Object {
+                    "kind": "SelectionSet",
+                    "selections": Array [
+                      Object {
+                        "alias": undefined,
+                        "arguments": Array [
+                          Object {
+                            "kind": "Argument",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "where",
+                            },
+                            "value": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "where",
+                              },
+                            },
+                          },
+                        ],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "productsCount",
+                        },
+                        "selectionSet": Object {
+                          "kind": "SelectionSet",
+                          "selections": Array [
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "count",
+                              },
+                              "selectionSet": undefined,
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                  "variableDefinitions": Array [
+                    Object {
+                      "defaultValue": undefined,
+                      "kind": "VariableDefinition",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "ProductWhereInput",
+                        },
+                      },
+                      "variable": Object {
+                        "kind": "Variable",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "where",
+                        },
+                      },
+                    },
+                  ],
+                },
+              ],
+              "kind": "Document",
+              "loc": Object {
+                "end": 112,
+                "start": 0,
+              },
+            }
+          }
+          variables={
+            Object {
+              "where": Object {
+                "bead": "RED_JASPER",
+                "sold": false,
+                "variant": "NECKLACE",
+              },
+            }
+          }
+        >
+          <Head>
+            <SideEffect
+              handleStateChange={null}
+              reduceComponentsToState={[Function]}
+            />
+          </Head>
+          <Link
+            href={
+              Object {
+                "pathname": "/products",
+                "query": Object {
+                  "bead": "RED_JASPER",
+                  "page": 0,
+                },
+              }
+            }
+            prefetch={true}
+          >
+            <a
+              aria-disabled={true}
+              className="prev"
+              href="/products?page=0&bead=RED_JASPER"
+              onClick={[Function]}
+            >
+              <KeyboardArrowLeft
+                size={20}
+              >
+                <StyledIconBase
+                  iconAttrs={
+                    Object {
+                      "fill": "currentColor",
+                    }
+                  }
+                  iconVerticalAlign="middle"
+                  iconViewBox="0 0 24 24"
+                  size={20}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "StyledIconBase-sc-bdy9j4",
+                          "isStatic": false,
+                          "lastClassName": "c1",
+                          "rules": Array [
+                            "
+  display: inline-block;
+  vertical-align: ",
+                            [Function],
+                            ";
+  overflow: hidden;
+",
+                          ],
+                        },
+                        "displayName": "StyledIconBase",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "StyledIconBase-sc-bdy9j4",
+                        "target": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "render": [Function],
+                        },
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    iconAttrs={
+                      Object {
+                        "fill": "currentColor",
+                      }
+                    }
+                    iconVerticalAlign="middle"
+                    iconViewBox="0 0 24 24"
+                    size={20}
+                  >
+                    <ForwardRef
+                      className="c1"
+                      iconAttrs={
+                        Object {
+                          "fill": "currentColor",
+                        }
+                      }
+                      iconVerticalAlign="middle"
+                      iconViewBox="0 0 24 24"
+                      size={20}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="c1"
+                        fill="currentColor"
+                        focusable="false"
+                        height={20}
+                        viewBox="0 0 24 24"
+                        width={20}
+                      >
+                        <path
+                          d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
+                          key="k0"
+                        />
+                      </svg>
+                    </ForwardRef>
+                  </StyledComponent>
+                </StyledIconBase>
+              </KeyboardArrowLeft>
+              <span>
+                Prev
+              </span>
+            </a>
+          </Link>
+          <p>
+            1
+             of 
+            <span
+              className="totalPages"
+            >
+              5
+            </span>
+          </p>
+          <Link
+            href="/catalog"
+            prefetch={true}
+          >
+            <a
+              href="/catalog"
+              onClick={[Function]}
+            >
+              Catalog
+            </a>
+          </Link>
+          <p>
+            36 Items
+          </p>
+          <Link
+            href={
+              Object {
+                "pathname": "/products",
+                "query": Object {
+                  "bead": "RED_JASPER",
+                  "page": 2,
+                },
+              }
+            }
+            prefetch={true}
+          >
+            <a
+              aria-disabled={false}
+              className="next"
+              href="/products?page=2&bead=RED_JASPER"
+              onClick={[Function]}
+            >
+              <span>
+                Next
+              </span>
+              <KeyboardArrowRight
+                size={20}
+              >
+                <StyledIconBase
+                  iconAttrs={
+                    Object {
+                      "fill": "currentColor",
+                    }
+                  }
+                  iconVerticalAlign="middle"
+                  iconViewBox="0 0 24 24"
+                  size={20}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "StyledIconBase-sc-bdy9j4",
+                          "isStatic": false,
+                          "lastClassName": "c1",
+                          "rules": Array [
+                            "
+  display: inline-block;
+  vertical-align: ",
+                            [Function],
+                            ";
+  overflow: hidden;
+",
+                          ],
+                        },
+                        "displayName": "StyledIconBase",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "StyledIconBase-sc-bdy9j4",
+                        "target": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "render": [Function],
+                        },
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    iconAttrs={
+                      Object {
+                        "fill": "currentColor",
+                      }
+                    }
+                    iconVerticalAlign="middle"
+                    iconViewBox="0 0 24 24"
+                    size={20}
+                  >
+                    <ForwardRef
+                      className="c1"
+                      iconAttrs={
+                        Object {
+                          "fill": "currentColor",
+                        }
+                      }
+                      iconVerticalAlign="middle"
+                      iconViewBox="0 0 24 24"
+                      size={20}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="c1"
+                        fill="currentColor"
+                        focusable="false"
+                        height={20}
+                        viewBox="0 0 24 24"
+                        width={20}
+                      >
+                        <path
+                          d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
+                          key="k0"
+                        />
+                      </svg>
+                    </ForwardRef>
+                  </StyledComponent>
+                </StyledIconBase>
+              </KeyboardArrowRight>
+            </a>
+          </Link>
+        </Query>
+      </div>
+    </StyledComponent>
+  </Pagination__PaginationStyles>,
+  .c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c0 {
+  display: inline-grid;
+  grid-template-columns: repeat(5,auto);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  border: 1px solid #E0E0E0;
+  border-left: 10px solid #FF80B5;
+  text-align: center;
+  background: #FAFAFA;
+  margin: 3rem auto;
+}
+
+.c0 > * {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 1.5rem 3rem;
+  border-right: 1px solid #E0E0E0;
+}
+
+.c0 > *:nth-child(odd):hover {
+  background: #ffe6f0;
+}
+
+.c0 > *:last-child {
+  border-right: 0;
+}
+
+.c0 a[aria-disabled='true'] {
+  color: grey;
+  pointer-events: none;
+}
+
+@media (max-width:36em) {
+  .c0 > * {
+    padding: .5rem .5rem;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1.1rem;
+  }
+}
+
+<StyledComponent
+    data-test="pagination"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Pagination__PaginationStyles-utzsbm-0",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "display:inline-grid;grid-template-columns:repeat(5,auto);align-items:stretch;justify-content:center;align-content:center;border:1px solid ",
+            [Function],
+            ";border-left:10px solid ",
+            [Function],
+            ";text-align:center;background:",
+            [Function],
+            ";margin:3rem auto;& > *{display:flex;align-items:center;margin:0;padding:1.5rem 3rem;border-right:1px solid ",
+            [Function],
+            ";",
+            "@media (max-width:",
+            "36",
+            "em){",
+            "
+      padding: .5rem .5rem; 
+      align-self: center; 
+      font-size: 1.1rem;
+    ",
+            "}",
+            " &:nth-child(odd):hover{background:",
+            [Function],
+            ";}&:last-child{border-right:0;}}a[aria-disabled='true']{color:grey;pointer-events:none;}",
+          ],
+        },
+        "displayName": "Pagination__PaginationStyles",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Pagination__PaginationStyles-utzsbm-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="c0"
+      data-test="pagination"
+    >
+      <Query
+        query={
+          Object {
+            "definitions": Array [
+              Object {
+                "directives": Array [],
+                "kind": "OperationDefinition",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "PAGINATION_QUERY",
+                },
+                "operation": "query",
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "where",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "where",
+                            },
+                          },
+                        },
+                      ],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "productsCount",
+                      },
+                      "selectionSet": Object {
+                        "kind": "SelectionSet",
+                        "selections": Array [
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "count",
+                            },
+                            "selectionSet": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+                "variableDefinitions": Array [
+                  Object {
+                    "defaultValue": undefined,
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NamedType",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "ProductWhereInput",
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "where",
+                      },
+                    },
+                  },
+                ],
+              },
+            ],
+            "kind": "Document",
+            "loc": Object {
+              "end": 112,
+              "start": 0,
+            },
+          }
+        }
+        variables={
+          Object {
+            "where": Object {
+              "bead": "RED_JASPER",
+              "sold": false,
+              "variant": "NECKLACE",
+            },
+          }
+        }
+      >
+        <Head>
+          <SideEffect
+            handleStateChange={null}
+            reduceComponentsToState={[Function]}
+          />
+        </Head>
+        <Link
+          href={
+            Object {
+              "pathname": "/products",
+              "query": Object {
+                "bead": "RED_JASPER",
+                "page": 0,
+              },
+            }
+          }
+          prefetch={true}
+        >
+          <a
+            aria-disabled={true}
+            className="prev"
+            href="/products?page=0&bead=RED_JASPER"
+            onClick={[Function]}
+          >
+            <KeyboardArrowLeft
+              size={20}
+            >
+              <StyledIconBase
+                iconAttrs={
+                  Object {
+                    "fill": "currentColor",
+                  }
+                }
+                iconVerticalAlign="middle"
+                iconViewBox="0 0 24 24"
+                size={20}
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "StyledIconBase-sc-bdy9j4",
+                        "isStatic": false,
+                        "lastClassName": "c1",
+                        "rules": Array [
+                          "
+  display: inline-block;
+  vertical-align: ",
+                          [Function],
+                          ";
+  overflow: hidden;
+",
+                        ],
+                      },
+                      "displayName": "StyledIconBase",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "StyledIconBase-sc-bdy9j4",
+                      "target": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      },
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  iconAttrs={
+                    Object {
+                      "fill": "currentColor",
+                    }
+                  }
+                  iconVerticalAlign="middle"
+                  iconViewBox="0 0 24 24"
+                  size={20}
+                >
+                  <ForwardRef
+                    className="c1"
+                    iconAttrs={
+                      Object {
+                        "fill": "currentColor",
+                      }
+                    }
+                    iconVerticalAlign="middle"
+                    iconViewBox="0 0 24 24"
+                    size={20}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="c1"
+                      fill="currentColor"
+                      focusable="false"
+                      height={20}
+                      viewBox="0 0 24 24"
+                      width={20}
+                    >
+                      <path
+                        d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
+                        key="k0"
+                      />
+                    </svg>
+                  </ForwardRef>
+                </StyledComponent>
+              </StyledIconBase>
+            </KeyboardArrowLeft>
+            <span>
+              Prev
+            </span>
+          </a>
+        </Link>
+        <p>
+          1
+           of 
+          <span
+            className="totalPages"
+          >
+            5
+          </span>
+        </p>
+        <Link
+          href="/catalog"
+          prefetch={true}
+        >
+          <a
+            href="/catalog"
+            onClick={[Function]}
+          >
+            Catalog
+          </a>
+        </Link>
+        <p>
+          36 Items
+        </p>
+        <Link
+          href={
+            Object {
+              "pathname": "/products",
+              "query": Object {
+                "bead": "RED_JASPER",
+                "page": 2,
+              },
+            }
+          }
+          prefetch={true}
+        >
+          <a
+            aria-disabled={false}
+            className="next"
+            href="/products?page=2&bead=RED_JASPER"
+            onClick={[Function]}
+          >
+            <span>
+              Next
+            </span>
+            <KeyboardArrowRight
+              size={20}
+            >
+              <StyledIconBase
+                iconAttrs={
+                  Object {
+                    "fill": "currentColor",
+                  }
+                }
+                iconVerticalAlign="middle"
+                iconViewBox="0 0 24 24"
+                size={20}
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "StyledIconBase-sc-bdy9j4",
+                        "isStatic": false,
+                        "lastClassName": "c1",
+                        "rules": Array [
+                          "
+  display: inline-block;
+  vertical-align: ",
+                          [Function],
+                          ";
+  overflow: hidden;
+",
+                        ],
+                      },
+                      "displayName": "StyledIconBase",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "StyledIconBase-sc-bdy9j4",
+                      "target": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      },
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  iconAttrs={
+                    Object {
+                      "fill": "currentColor",
+                    }
+                  }
+                  iconVerticalAlign="middle"
+                  iconViewBox="0 0 24 24"
+                  size={20}
+                >
+                  <ForwardRef
+                    className="c1"
+                    iconAttrs={
+                      Object {
+                        "fill": "currentColor",
+                      }
+                    }
+                    iconVerticalAlign="middle"
+                    iconViewBox="0 0 24 24"
+                    size={20}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="c1"
+                      fill="currentColor"
+                      focusable="false"
+                      height={20}
+                      viewBox="0 0 24 24"
+                      width={20}
+                    >
+                      <path
+                        d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
+                        key="k0"
+                      />
+                    </svg>
+                  </ForwardRef>
+                </StyledComponent>
+              </StyledIconBase>
+            </KeyboardArrowRight>
+          </a>
+        </Link>
+      </Query>
+    </div>
+  </StyledComponent>,
+  .c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c0 {
+  display: inline-grid;
+  grid-template-columns: repeat(5,auto);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  border: 1px solid #E0E0E0;
+  border-left: 10px solid #FF80B5;
+  text-align: center;
+  background: #FAFAFA;
+  margin: 3rem auto;
+}
+
+.c0 > * {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 1.5rem 3rem;
+  border-right: 1px solid #E0E0E0;
+}
+
+.c0 > *:nth-child(odd):hover {
+  background: #ffe6f0;
+}
+
+.c0 > *:last-child {
+  border-right: 0;
+}
+
+.c0 a[aria-disabled='true'] {
+  color: grey;
+  pointer-events: none;
+}
+
+@media (max-width:36em) {
+  .c0 > * {
+    padding: .5rem .5rem;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1.1rem;
+  }
+}
+
+<div
+    className="c0"
+    data-test="pagination"
+  >
+    <Query
+      query={
+        Object {
+          "definitions": Array [
+            Object {
+              "directives": Array [],
+              "kind": "OperationDefinition",
+              "name": Object {
+                "kind": "Name",
+                "value": "PAGINATION_QUERY",
+              },
+              "operation": "query",
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [
+                      Object {
+                        "kind": "Argument",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "where",
+                        },
+                        "value": Object {
+                          "kind": "Variable",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "where",
+                          },
+                        },
+                      },
+                    ],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "productsCount",
+                    },
+                    "selectionSet": Object {
+                      "kind": "SelectionSet",
+                      "selections": Array [
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "count",
+                          },
+                          "selectionSet": undefined,
+                        },
+                      ],
+                    },
+                  },
+                ],
+              },
+              "variableDefinitions": Array [
+                Object {
+                  "defaultValue": undefined,
+                  "kind": "VariableDefinition",
+                  "type": Object {
+                    "kind": "NamedType",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "ProductWhereInput",
+                    },
+                  },
+                  "variable": Object {
+                    "kind": "Variable",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "where",
+                    },
+                  },
+                },
+              ],
+            },
+          ],
+          "kind": "Document",
+          "loc": Object {
+            "end": 112,
+            "start": 0,
+          },
+        }
+      }
+      variables={
+        Object {
+          "where": Object {
+            "bead": "RED_JASPER",
+            "sold": false,
+            "variant": "NECKLACE",
+          },
+        }
+      }
+    >
+      <Head>
+        <SideEffect
+          handleStateChange={null}
+          reduceComponentsToState={[Function]}
+        />
+      </Head>
+      <Link
+        href={
+          Object {
+            "pathname": "/products",
+            "query": Object {
+              "bead": "RED_JASPER",
+              "page": 0,
+            },
+          }
+        }
+        prefetch={true}
+      >
+        <a
+          aria-disabled={true}
+          className="prev"
+          href="/products?page=0&bead=RED_JASPER"
+          onClick={[Function]}
+        >
+          <KeyboardArrowLeft
+            size={20}
+          >
+            <StyledIconBase
+              iconAttrs={
+                Object {
+                  "fill": "currentColor",
+                }
+              }
+              iconVerticalAlign="middle"
+              iconViewBox="0 0 24 24"
+              size={20}
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "StyledIconBase-sc-bdy9j4",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  display: inline-block;
+  vertical-align: ",
+                        [Function],
+                        ";
+  overflow: hidden;
+",
+                      ],
+                    },
+                    "displayName": "StyledIconBase",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "StyledIconBase-sc-bdy9j4",
+                    "target": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                iconAttrs={
+                  Object {
+                    "fill": "currentColor",
+                  }
+                }
+                iconVerticalAlign="middle"
+                iconViewBox="0 0 24 24"
+                size={20}
+              >
+                <ForwardRef
+                  className="c1"
+                  iconAttrs={
+                    Object {
+                      "fill": "currentColor",
+                    }
+                  }
+                  iconVerticalAlign="middle"
+                  iconViewBox="0 0 24 24"
+                  size={20}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="c1"
+                    fill="currentColor"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 24 24"
+                    width={20}
+                  >
+                    <path
+                      d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
+                      key="k0"
+                    />
+                  </svg>
+                </ForwardRef>
+              </StyledComponent>
+            </StyledIconBase>
+          </KeyboardArrowLeft>
+          <span>
+            Prev
+          </span>
+        </a>
+      </Link>
+      <p>
+        1
+         of 
+        <span
+          className="totalPages"
+        >
+          5
+        </span>
+      </p>
+      <Link
+        href="/catalog"
+        prefetch={true}
+      >
+        <a
+          href="/catalog"
+          onClick={[Function]}
+        >
+          Catalog
+        </a>
+      </Link>
+      <p>
+        36 Items
+      </p>
+      <Link
+        href={
+          Object {
+            "pathname": "/products",
+            "query": Object {
+              "bead": "RED_JASPER",
+              "page": 2,
+            },
+          }
+        }
+        prefetch={true}
+      >
+        <a
+          aria-disabled={false}
+          className="next"
+          href="/products?page=2&bead=RED_JASPER"
+          onClick={[Function]}
+        >
+          <span>
+            Next
+          </span>
+          <KeyboardArrowRight
+            size={20}
+          >
+            <StyledIconBase
+              iconAttrs={
+                Object {
+                  "fill": "currentColor",
+                }
+              }
+              iconVerticalAlign="middle"
+              iconViewBox="0 0 24 24"
+              size={20}
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "StyledIconBase-sc-bdy9j4",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  display: inline-block;
+  vertical-align: ",
+                        [Function],
+                        ";
+  overflow: hidden;
+",
+                      ],
+                    },
+                    "displayName": "StyledIconBase",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "StyledIconBase-sc-bdy9j4",
+                    "target": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                iconAttrs={
+                  Object {
+                    "fill": "currentColor",
+                  }
+                }
+                iconVerticalAlign="middle"
+                iconViewBox="0 0 24 24"
+                size={20}
+              >
+                <ForwardRef
+                  className="c1"
+                  iconAttrs={
+                    Object {
+                      "fill": "currentColor",
+                    }
+                  }
+                  iconVerticalAlign="middle"
+                  iconViewBox="0 0 24 24"
+                  size={20}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="c1"
+                    fill="currentColor"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 24 24"
+                    width={20}
+                  >
+                    <path
+                      d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
+                      key="k0"
+                    />
+                  </svg>
+                </ForwardRef>
+              </StyledComponent>
+            </StyledIconBase>
+          </KeyboardArrowRight>
+        </a>
+      </Link>
+    </Query>
+  </div>,
+]
+`;

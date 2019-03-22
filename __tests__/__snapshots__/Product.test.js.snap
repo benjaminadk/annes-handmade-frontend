@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Product/> displays error when product is not found 1`] = `
+<p
+  data-test="graphql-error"
+>
+  Error: 
+  Product not found
+</p>
+`;
+
+exports[`<Product/> renders with proper data 1`] = `null`;
+
+exports[`<Product/> renders with proper data 2`] = `null`;
+
+exports[`<Product/> renders with proper data 3`] = `null`;
