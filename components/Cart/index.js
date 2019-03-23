@@ -21,7 +21,7 @@ export default function Cart({ user: { name, cart, email } }) {
     <Composed>
       {({ toggleCart, localState }) => {
         return (
-          <CartStyles open={localState.data.cartOpen}>
+          <CartStyles data-test="cart" open={localState.data.cartOpen}>
             <CartHeader title={title} toggleCart={toggleCart} />
             <ul>
               {cart.length ? cart.map(el => <CartItem key={el.id} cartItem={el} />) : <NoItems />}

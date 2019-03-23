@@ -926,7 +926,7 @@ Array [
           </Link>
           <p>
             1
-             of 
+             of  
             <span
               className="totalPages"
             >
@@ -1384,7 +1384,7 @@ Array [
         </Link>
         <p>
           1
-           of 
+           of  
           <span
             className="totalPages"
           >
@@ -1795,7 +1795,7 @@ Array [
       </Link>
       <p>
         1
-         of 
+         of  
         <span
           className="totalPages"
         >

@@ -65,7 +65,7 @@ export default function Pagination({ page, where }) {
                 </a>
               </Link>
               <p>
-                {page} of <span className="totalPages">&nbsp;{pages}</span>
+                {page} of&nbsp; <span className="totalPages">{pages}</span>
               </p>
               <Link href="/catalog" prefetch>
                 <a>Catalog</a>
