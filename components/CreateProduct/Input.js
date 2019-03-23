@@ -6,7 +6,7 @@ export default function Input({ type, label, name, value, options, rows, onChang
     <InputStyles htmlFor={name}>
       <strong>{label}</strong>
       {type === 'select' ? (
-        <select name={name} value={value} onChange={onChange}>
+        <select id={name} name={name} value={value} onChange={onChange}>
           {options.map((el, i) => (
             <option key={el} value={el}>
               {formatText(el)}
@@ -14,9 +14,23 @@ export default function Input({ type, label, name, value, options, rows, onChang
           ))}
         </select>
       ) : type === 'textarea' ? (
-        <textarea name={name} value={value} rows={rows} spellCheck={false} onChange={onChange} />
+        <textarea
+          id={name}
+          name={name}
+          value={value}
+          rows={rows}
+          spellCheck={false}
+          onChange={onChange}
+        />
       ) : (
-        <input type={type} name={name} value={value} spellCheck={false} onChange={onChange} />
+        <input
+          id={name}
+          type={type}
+          name={name}
+          value={value}
+          spellCheck={false}
+          onChange={onChange}
+        />
       )}
     </InputStyles>
   )

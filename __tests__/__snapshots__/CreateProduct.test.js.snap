@@ -1,0 +1,1162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreateProduct /> renders and matches snapshot 1`] = `
+.c2 {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 2rem;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.c2 .dropzone {
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  border: 1px solid #E0E0E0;
+  cursor: pointer;
+}
+
+.c2 .dropzone:hover {
+  outline: 3px solid #00c271;
+}
+
+.c2 .dropzone input[type='file'] {
+  display: none;
+}
+
+.c2 span {
+  background: #333333;
+  color: white;
+  border-left: 5px solid #FF80B5;
+  padding: 0 1rem 0 0.5rem;
+}
+
+.c2 img {
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid #E0E0E0;
+  background: white;
+}
+
+.c2 button {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.c2 span.add {
+  width: 5rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: none;
+  color: black;
+  border: none;
+  font-size: 2rem;
+  padding: 0;
+}
+
+.c1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.c1 > strong {
+  width: 80%;
+  background: #333333;
+  color: white;
+  border-left: 5px solid #FF80B5;
+  padding: 0 1rem 0 0.5rem;
+  text-align: center;
+}
+
+.c1 input,
+.c1 textarea,
+.c1 select {
+  width: 100%;
+  padding: 0.5rem;
+  font-family: 'Raleway';
+  font-size: 1.5rem;
+  border: 1px solid #333333;
+}
+
+.c1 input:focus,
+.c1 textarea:focus,
+.c1 select:focus {
+  outline: 3px solid #00c271;
+}
+
+.c0 {
+  width: 45rem;
+  justify-self: center;
+  border: 1px solid #E0E0E0;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  background: #FAFAFA;
+}
+
+.c0 fieldset {
+  border: none;
+  padding: 0;
+}
+
+.c3 {
+  font-family: 'Raleway';
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #29FFA6;
+  color: #3D3D3D;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin-top: 2rem;
+  width: 100%;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.c3:hover {
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.09);
+}
+
+@media (max-width:36em) {
+  .c3 {
+    font-size: 2rem;
+  }
+}
+
+<form
+  className="c0"
+  data-test="create-product"
+  method="POST"
+  onSubmit={[Function]}
+>
+  <fieldset
+    aria-busy={false}
+    disabled={false}
+  >
+    <Input
+      label="Title"
+      name="title"
+      onChange={[Function]}
+      type="text"
+      value=""
+    >
+      <Input__InputStyles
+        htmlFor="title"
+      >
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Input__InputStyles-sc-14c2846-0",
+                "isStatic": false,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "display:grid;grid-template-columns:1fr 2fr;align-items:center;margin-bottom:2rem;& > strong{width:80%;background:",
+                  [Function],
+                  ";color:white;border-left:5px solid ",
+                  [Function],
+                  ";padding:0 1rem 0 0.5rem;text-align:center;}input,textarea,select{width:100%;padding:0.5rem;font-family:'Raleway';font-size:1.5rem;border:1px solid ",
+                  [Function],
+                  ";&:focus{outline:3px solid ",
+                  [Function],
+                  ";}}",
+                ],
+              },
+              "displayName": "Input__InputStyles",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Input__InputStyles-sc-14c2846-0",
+              "target": "label",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          htmlFor="title"
+        >
+          <label
+            className="c1"
+            htmlFor="title"
+          >
+            <strong>
+              Title
+            </strong>
+            <input
+              id="title"
+              name="title"
+              onChange={[Function]}
+              spellCheck={false}
+              type="text"
+              value=""
+            />
+          </label>
+        </StyledComponent>
+      </Input__InputStyles>
+    </Input>
+    <Input
+      label="Description"
+      name="description"
+      onChange={[Function]}
+      type="textarea"
+      value=""
+    >
+      <Input__InputStyles
+        htmlFor="description"
+      >
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Input__InputStyles-sc-14c2846-0",
+                "isStatic": false,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "display:grid;grid-template-columns:1fr 2fr;align-items:center;margin-bottom:2rem;& > strong{width:80%;background:",
+                  [Function],
+                  ";color:white;border-left:5px solid ",
+                  [Function],
+                  ";padding:0 1rem 0 0.5rem;text-align:center;}input,textarea,select{width:100%;padding:0.5rem;font-family:'Raleway';font-size:1.5rem;border:1px solid ",
+                  [Function],
+                  ";&:focus{outline:3px solid ",
+                  [Function],
+                  ";}}",
+                ],
+              },
+              "displayName": "Input__InputStyles",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Input__InputStyles-sc-14c2846-0",
+              "target": "label",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          htmlFor="description"
+        >
+          <label
+            className="c1"
+            htmlFor="description"
+          >
+            <strong>
+              Description
+            </strong>
+            <textarea
+              id="description"
+              name="description"
+              onChange={[Function]}
+              spellCheck={false}
+              value=""
+            />
+          </label>
+        </StyledComponent>
+      </Input__InputStyles>
+    </Input>
+    <Input
+      label="Price"
+      name="price"
+      onChange={[Function]}
+      type="number"
+      value={0}
+    >
+      <Input__InputStyles
+        htmlFor="price"
+      >
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Input__InputStyles-sc-14c2846-0",
+                "isStatic": false,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "display:grid;grid-template-columns:1fr 2fr;align-items:center;margin-bottom:2rem;& > strong{width:80%;background:",
+                  [Function],
+                  ";color:white;border-left:5px solid ",
+                  [Function],
+                  ";padding:0 1rem 0 0.5rem;text-align:center;}input,textarea,select{width:100%;padding:0.5rem;font-family:'Raleway';font-size:1.5rem;border:1px solid ",
+                  [Function],
+                  ";&:focus{outline:3px solid ",
+                  [Function],
+                  ";}}",
+                ],
+              },
+              "displayName": "Input__InputStyles",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Input__InputStyles-sc-14c2846-0",
+              "target": "label",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          htmlFor="price"
+        >
+          <label
+            className="c1"
+            htmlFor="price"
+          >
+            <strong>
+              Price
+            </strong>
+            <input
+              id="price"
+              name="price"
+              onChange={[Function]}
+              spellCheck={false}
+              type="number"
+              value={0}
+            />
+          </label>
+        </StyledComponent>
+      </Input__InputStyles>
+    </Input>
+    <Input
+      label="Type"
+      name="variant"
+      onChange={[Function]}
+      options={
+        Array [
+          "NECKLACE",
+          "BRACELET",
+          "EARRINGS",
+        ]
+      }
+      type="select"
+      value="NECKLACE"
+    >
+      <Input__InputStyles
+        htmlFor="variant"
+      >
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Input__InputStyles-sc-14c2846-0",
+                "isStatic": false,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "display:grid;grid-template-columns:1fr 2fr;align-items:center;margin-bottom:2rem;& > strong{width:80%;background:",
+                  [Function],
+                  ";color:white;border-left:5px solid ",
+                  [Function],
+                  ";padding:0 1rem 0 0.5rem;text-align:center;}input,textarea,select{width:100%;padding:0.5rem;font-family:'Raleway';font-size:1.5rem;border:1px solid ",
+                  [Function],
+                  ";&:focus{outline:3px solid ",
+                  [Function],
+                  ";}}",
+                ],
+              },
+              "displayName": "Input__InputStyles",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Input__InputStyles-sc-14c2846-0",
+              "target": "label",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          htmlFor="variant"
+        >
+          <label
+            className="c1"
+            htmlFor="variant"
+          >
+            <strong>
+              Type
+            </strong>
+            <select
+              id="variant"
+              name="variant"
+              onChange={[Function]}
+              value="NECKLACE"
+            >
+              <option
+                key="NECKLACE"
+                value="NECKLACE"
+              >
+                Necklace
+              </option>
+              <option
+                key="BRACELET"
+                value="BRACELET"
+              >
+                Bracelet
+              </option>
+              <option
+                key="EARRINGS"
+                value="EARRINGS"
+              >
+                Earrings
+              </option>
+            </select>
+          </label>
+        </StyledComponent>
+      </Input__InputStyles>
+    </Input>
+    <Input
+      label="Bead"
+      name="bead"
+      onChange={[Function]}
+      options={
+        Array [
+          "RED_JASPER",
+          "FANCY_JASPER",
+          "MUSTANG_JASPER",
+          "LEOPARD_JASPER",
+          "AVENTURINE",
+          "CARNELIAN",
+          "SAGUARO_JASPER",
+          "BLACK_ONYX",
+          "AMETHYST",
+          "ROSE_QUARTZ",
+          "CHALK_TURQUOISE",
+          "SWAROVSKI",
+          "YELLOW_JADE",
+        ]
+      }
+      type="select"
+      value="RED_JASPER"
+    >
+      <Input__InputStyles
+        htmlFor="bead"
+      >
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Input__InputStyles-sc-14c2846-0",
+                "isStatic": false,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "display:grid;grid-template-columns:1fr 2fr;align-items:center;margin-bottom:2rem;& > strong{width:80%;background:",
+                  [Function],
+                  ";color:white;border-left:5px solid ",
+                  [Function],
+                  ";padding:0 1rem 0 0.5rem;text-align:center;}input,textarea,select{width:100%;padding:0.5rem;font-family:'Raleway';font-size:1.5rem;border:1px solid ",
+                  [Function],
+                  ";&:focus{outline:3px solid ",
+                  [Function],
+                  ";}}",
+                ],
+              },
+              "displayName": "Input__InputStyles",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Input__InputStyles-sc-14c2846-0",
+              "target": "label",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          htmlFor="bead"
+        >
+          <label
+            className="c1"
+            htmlFor="bead"
+          >
+            <strong>
+              Bead
+            </strong>
+            <select
+              id="bead"
+              name="bead"
+              onChange={[Function]}
+              value="RED_JASPER"
+            >
+              <option
+                key="RED_JASPER"
+                value="RED_JASPER"
+              >
+                Red Jasper
+              </option>
+              <option
+                key="FANCY_JASPER"
+                value="FANCY_JASPER"
+              >
+                Fancy Jasper
+              </option>
+              <option
+                key="MUSTANG_JASPER"
+                value="MUSTANG_JASPER"
+              >
+                Mustang Jasper
+              </option>
+              <option
+                key="LEOPARD_JASPER"
+                value="LEOPARD_JASPER"
+              >
+                Leopard Jasper
+              </option>
+              <option
+                key="AVENTURINE"
+                value="AVENTURINE"
+              >
+                Aventurine
+              </option>
+              <option
+                key="CARNELIAN"
+                value="CARNELIAN"
+              >
+                Carnelian
+              </option>
+              <option
+                key="SAGUARO_JASPER"
+                value="SAGUARO_JASPER"
+              >
+                Saguaro Jasper
+              </option>
+              <option
+                key="BLACK_ONYX"
+                value="BLACK_ONYX"
+              >
+                Black Onyx
+              </option>
+              <option
+                key="AMETHYST"
+                value="AMETHYST"
+              >
+                Amethyst
+              </option>
+              <option
+                key="ROSE_QUARTZ"
+                value="ROSE_QUARTZ"
+              >
+                Rose Quartz
+              </option>
+              <option
+                key="CHALK_TURQUOISE"
+                value="CHALK_TURQUOISE"
+              >
+                Chalk Turquoise
+              </option>
+              <option
+                key="SWAROVSKI"
+                value="SWAROVSKI"
+              >
+                Swarovski
+              </option>
+              <option
+                key="YELLOW_JADE"
+                value="YELLOW_JADE"
+              >
+                Yellow Jade
+              </option>
+            </select>
+          </label>
+        </StyledComponent>
+      </Input__InputStyles>
+    </Input>
+    <Image
+      image=""
+      index={1}
+      onChange={[Function]}
+      onClick={[Function]}
+    >
+      <Image__ImageStyles>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Image__ImageStyles-sc-429lkw-0",
+                "isStatic": false,
+                "lastClassName": "c2",
+                "rules": Array [
+                  "display:grid;grid-template-columns:auto 1fr auto;grid-gap:2rem;justify-items:center;align-items:center;margin-bottom:1rem;.dropzone{width:5rem;height:5rem;text-align:center;border:1px solid ",
+                  [Function],
+                  ";cursor:pointer;&:hover{outline:3px solid ",
+                  [Function],
+                  ";}input[type='file']{display:none;}}span{background:",
+                  [Function],
+                  ";color:white;border-left:5px solid ",
+                  [Function],
+                  ";padding:0 1rem 0 0.5rem;}img{width:5rem;height:5rem;border:1px solid ",
+                  [Function],
+                  ";background:white;}button{background:none;border:none;outline:none;font-size:2rem;margin-right:1rem;cursor:pointer;}span.add{width:5rem;height:5rem;display:flex;justify-content:center;align-items:center;background:none;color:black;border:none;font-size:2rem;padding:0;}",
+                ],
+              },
+              "displayName": "Image__ImageStyles",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Image__ImageStyles-sc-429lkw-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            className="c2"
+          >
+            <AddImage
+              index={1}
+              onChange={[Function]}
+              title="Image 1"
+            >
+              <span>
+                Image 1
+              </span>
+              <Mutation
+                mutation={
+                  Object {
+                    "definitions": Array [
+                      Object {
+                        "directives": Array [],
+                        "kind": "OperationDefinition",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "ADD_IMAGE_MUTATION",
+                        },
+                        "operation": "mutation",
+                        "selectionSet": Object {
+                          "kind": "SelectionSet",
+                          "selections": Array [
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [
+                                Object {
+                                  "kind": "Argument",
+                                  "name": Object {
+                                    "kind": "Name",
+                                    "value": "id",
+                                  },
+                                  "value": Object {
+                                    "kind": "Variable",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "id",
+                                    },
+                                  },
+                                },
+                                Object {
+                                  "kind": "Argument",
+                                  "name": Object {
+                                    "kind": "Name",
+                                    "value": "filename",
+                                  },
+                                  "value": Object {
+                                    "kind": "Variable",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "filename",
+                                    },
+                                  },
+                                },
+                                Object {
+                                  "kind": "Argument",
+                                  "name": Object {
+                                    "kind": "Name",
+                                    "value": "filetype",
+                                  },
+                                  "value": Object {
+                                    "kind": "Variable",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "filetype",
+                                    },
+                                  },
+                                },
+                              ],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "addImage",
+                              },
+                              "selectionSet": Object {
+                                "kind": "SelectionSet",
+                                "selections": Array [
+                                  Object {
+                                    "alias": undefined,
+                                    "arguments": Array [],
+                                    "directives": Array [],
+                                    "kind": "Field",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "url",
+                                    },
+                                    "selectionSet": undefined,
+                                  },
+                                  Object {
+                                    "alias": undefined,
+                                    "arguments": Array [],
+                                    "directives": Array [],
+                                    "kind": "Field",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "image",
+                                    },
+                                    "selectionSet": undefined,
+                                  },
+                                ],
+                              },
+                            },
+                          ],
+                        },
+                        "variableDefinitions": Array [
+                          Object {
+                            "defaultValue": undefined,
+                            "kind": "VariableDefinition",
+                            "type": Object {
+                              "kind": "NamedType",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "ID",
+                              },
+                            },
+                            "variable": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "id",
+                              },
+                            },
+                          },
+                          Object {
+                            "defaultValue": undefined,
+                            "kind": "VariableDefinition",
+                            "type": Object {
+                              "kind": "NonNullType",
+                              "type": Object {
+                                "kind": "NamedType",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "String",
+                                },
+                              },
+                            },
+                            "variable": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "filename",
+                              },
+                            },
+                          },
+                          Object {
+                            "defaultValue": undefined,
+                            "kind": "VariableDefinition",
+                            "type": Object {
+                              "kind": "NonNullType",
+                              "type": Object {
+                                "kind": "NamedType",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "String",
+                                },
+                              },
+                            },
+                            "variable": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "filetype",
+                              },
+                            },
+                          },
+                        ],
+                      },
+                    ],
+                    "kind": "Document",
+                    "loc": Object {
+                      "end": 180,
+                      "start": 0,
+                    },
+                  }
+                }
+              >
+                <div
+                  className="dropzone"
+                  onClick={[Function]}
+                  title="Image 1"
+                >
+                  <input
+                    accept="image/*"
+                    multiple={false}
+                    onChange={[Function]}
+                    type="file"
+                  />
+                  <span
+                    className="add"
+                  >
+                    ➕
+                  </span>
+                </div>
+              </Mutation>
+              <button
+                disabled={true}
+                style={
+                  Object {
+                    "cursor": "auto",
+                  }
+                }
+              >
+                🚫
+              </button>
+            </AddImage>
+          </div>
+        </StyledComponent>
+      </Image__ImageStyles>
+    </Image>
+    <Image
+      image=""
+      index={2}
+      onChange={[Function]}
+      onClick={[Function]}
+    >
+      <Image__ImageStyles>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Image__ImageStyles-sc-429lkw-0",
+                "isStatic": false,
+                "lastClassName": "c2",
+                "rules": Array [
+                  "display:grid;grid-template-columns:auto 1fr auto;grid-gap:2rem;justify-items:center;align-items:center;margin-bottom:1rem;.dropzone{width:5rem;height:5rem;text-align:center;border:1px solid ",
+                  [Function],
+                  ";cursor:pointer;&:hover{outline:3px solid ",
+                  [Function],
+                  ";}input[type='file']{display:none;}}span{background:",
+                  [Function],
+                  ";color:white;border-left:5px solid ",
+                  [Function],
+                  ";padding:0 1rem 0 0.5rem;}img{width:5rem;height:5rem;border:1px solid ",
+                  [Function],
+                  ";background:white;}button{background:none;border:none;outline:none;font-size:2rem;margin-right:1rem;cursor:pointer;}span.add{width:5rem;height:5rem;display:flex;justify-content:center;align-items:center;background:none;color:black;border:none;font-size:2rem;padding:0;}",
+                ],
+              },
+              "displayName": "Image__ImageStyles",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Image__ImageStyles-sc-429lkw-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            className="c2"
+          >
+            <AddImage
+              index={2}
+              onChange={[Function]}
+              title="Image 2"
+            >
+              <span>
+                Image 2
+              </span>
+              <Mutation
+                mutation={
+                  Object {
+                    "definitions": Array [
+                      Object {
+                        "directives": Array [],
+                        "kind": "OperationDefinition",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "ADD_IMAGE_MUTATION",
+                        },
+                        "operation": "mutation",
+                        "selectionSet": Object {
+                          "kind": "SelectionSet",
+                          "selections": Array [
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [
+                                Object {
+                                  "kind": "Argument",
+                                  "name": Object {
+                                    "kind": "Name",
+                                    "value": "id",
+                                  },
+                                  "value": Object {
+                                    "kind": "Variable",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "id",
+                                    },
+                                  },
+                                },
+                                Object {
+                                  "kind": "Argument",
+                                  "name": Object {
+                                    "kind": "Name",
+                                    "value": "filename",
+                                  },
+                                  "value": Object {
+                                    "kind": "Variable",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "filename",
+                                    },
+                                  },
+                                },
+                                Object {
+                                  "kind": "Argument",
+                                  "name": Object {
+                                    "kind": "Name",
+                                    "value": "filetype",
+                                  },
+                                  "value": Object {
+                                    "kind": "Variable",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "filetype",
+                                    },
+                                  },
+                                },
+                              ],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "addImage",
+                              },
+                              "selectionSet": Object {
+                                "kind": "SelectionSet",
+                                "selections": Array [
+                                  Object {
+                                    "alias": undefined,
+                                    "arguments": Array [],
+                                    "directives": Array [],
+                                    "kind": "Field",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "url",
+                                    },
+                                    "selectionSet": undefined,
+                                  },
+                                  Object {
+                                    "alias": undefined,
+                                    "arguments": Array [],
+                                    "directives": Array [],
+                                    "kind": "Field",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "image",
+                                    },
+                                    "selectionSet": undefined,
+                                  },
+                                ],
+                              },
+                            },
+                          ],
+                        },
+                        "variableDefinitions": Array [
+                          Object {
+                            "defaultValue": undefined,
+                            "kind": "VariableDefinition",
+                            "type": Object {
+                              "kind": "NamedType",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "ID",
+                              },
+                            },
+                            "variable": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "id",
+                              },
+                            },
+                          },
+                          Object {
+                            "defaultValue": undefined,
+                            "kind": "VariableDefinition",
+                            "type": Object {
+                              "kind": "NonNullType",
+                              "type": Object {
+                                "kind": "NamedType",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "String",
+                                },
+                              },
+                            },
+                            "variable": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "filename",
+                              },
+                            },
+                          },
+                          Object {
+                            "defaultValue": undefined,
+                            "kind": "VariableDefinition",
+                            "type": Object {
+                              "kind": "NonNullType",
+                              "type": Object {
+                                "kind": "NamedType",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "String",
+                                },
+                              },
+                            },
+                            "variable": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "filetype",
+                              },
+                            },
+                          },
+                        ],
+                      },
+                    ],
+                    "kind": "Document",
+                    "loc": Object {
+                      "end": 180,
+                      "start": 0,
+                    },
+                  }
+                }
+              >
+                <div
+                  className="dropzone"
+                  onClick={[Function]}
+                  title="Image 2"
+                >
+                  <input
+                    accept="image/*"
+                    multiple={false}
+                    onChange={[Function]}
+                    type="file"
+                  />
+                  <span
+                    className="add"
+                  >
+                    ➕
+                  </span>
+                </div>
+              </Mutation>
+              <button
+                disabled={true}
+                style={
+                  Object {
+                    "cursor": "auto",
+                  }
+                }
+              >
+                🚫
+              </button>
+            </AddImage>
+          </div>
+        </StyledComponent>
+      </Image__ImageStyles>
+    </Image>
+    <CreateProduct__CreateButton
+      type="submit"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "CreateProduct__CreateButton-icugni-1",
+              "isStatic": false,
+              "lastClassName": "c3",
+              "rules": Array [
+                "font-family:'Raleway';font-size:2.5rem;padding:0.5rem;border:none;outline:none;cursor:pointer;background:",
+                [Function],
+                ";color:",
+                [Function],
+                ";transition:all 0.5s ease-in-out;&:hover{box-shadow:",
+                [Function],
+                ";}",
+                "@media (max-width:",
+                "36",
+                "em){",
+                "
+    font-size: 2rem;
+  ",
+                "}",
+                "margin-top:2rem;width:100%;font-size:2rem;padding:1rem;",
+              ],
+            },
+            "displayName": "CreateProduct__CreateButton",
+            "foldedComponentIds": Array [
+              "GreenButton-sc-1bjesnv-0",
+            ],
+            "render": [Function],
+            "styledComponentId": "CreateProduct__CreateButton-icugni-1",
+            "target": "button",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        type="submit"
+      >
+        <button
+          className="c3"
+          type="submit"
+        >
+          Creat
+          e
+           Product
+        </button>
+      </StyledComponent>
+    </CreateProduct__CreateButton>
+  </fieldset>
+</form>
+`;

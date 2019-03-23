@@ -9,7 +9,7 @@ const routes = {
 }
 
 function AdminNav(props) {
-  const route = props.router.route
+  const route = props.router && props.router.route
   const highlightIndex = routes[route]
   return (
     <AdminNavStyles highlightIndex={highlightIndex}>

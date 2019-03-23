@@ -2,7 +2,7 @@ import { ImageStyles } from './styles/Image'
 import AddImage from './AddImage'
 import DeleteImage from './DeleteImage'
 
-export default function({ id, image, index, onClick, onChange }) {
+export default function Image({ id, image, index, onClick, onChange }) {
   return (
     <ImageStyles>
       {image ? (

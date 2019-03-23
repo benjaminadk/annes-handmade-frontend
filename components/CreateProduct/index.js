@@ -89,7 +89,11 @@ export default class CreateProduct extends React.Component {
         <AdminNav />
         <Mutation mutation={CREATE_PRODUCT_MUTATION}>
           {(createProduct, { loading, error }) => (
-            <CreateProductStyles method="POST" onSubmit={e => this.handleSubmit(e, createProduct)}>
+            <CreateProductStyles
+              data-test="create-product"
+              method="POST"
+              onSubmit={e => this.handleSubmit(e, createProduct)}
+            >
               <fieldset disabled={loading} aria-busy={loading}>
                 <Input
                   type="text"
