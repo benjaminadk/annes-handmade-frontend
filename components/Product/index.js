@@ -20,12 +20,13 @@ export default function Product({ query: { id }, user }) {
         }
         const { product, thumbIndex } = data
         return (
-          <ProductStyles>
+          <>
             <NextSeo
               config={{
                 title: product.title,
                 openGraph: {
                   title: `Anne's Handmade | ${product.title}`,
+                  url: `https://anneshandmade.herokuapp.com/product?id=${product.id}`,
                   images: [
                     {
                       url: product.images[0],
@@ -37,10 +38,12 @@ export default function Product({ query: { id }, user }) {
                 }
               }}
             />
-            <Thumbnails images={product.images} thumbIndex={thumbIndex} />
-            <LargeImage image={product.images[thumbIndex]} />
-            <ProductDetail product={product} user={user} />
-          </ProductStyles>
+            <ProductStyles>
+              <Thumbnails images={product.images} thumbIndex={thumbIndex} />
+              <LargeImage image={product.images[thumbIndex]} />
+              <ProductDetail product={product} user={user} />
+            </ProductStyles>
+          </>
         )
       }}
     </Query>

@@ -14,7 +14,7 @@ export default {
     site_name: "Anne's Handmade",
     images: [
       {
-        url: 'https://s3-us-west-1.amazonaws.com/shopping-site/assets/open-graph.jpeg',
+        url: 'https://s3-us-west-1.amazonaws.com/shopping-site/assets/open-graph-2.jpeg',
         width: '800',
         height: '800',
         alt: "Anne's Handmade Logo"
