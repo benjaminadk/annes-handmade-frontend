@@ -5,8 +5,7 @@ import { ProfileStyles, Title, Description, Content, ProfileButton } from './sty
 import { UPDATE_USER_MUTATION } from '../../apollo/mutation/updateUser'
 import { CURRENT_USER_QUERY } from '../../apollo/query/me'
 import Input from '../Register/Input'
-import AddImageUser from './AddImageUser'
-import DeleteImageUser from './DeleteImageUser'
+import Image from './Image'
 import DisplayError from '../DisplayError'
 import formatFilename from '../../lib/formatFilename'
 
@@ -65,7 +64,6 @@ class ProfileUser extends React.Component {
         variables: { id, url: image },
         refetchQueries: [{ query: CURRENT_USER_QUERY }]
       })
-      this.setState({ state: this.state })
       NProgress.done()
     }
   }
@@ -111,12 +109,12 @@ class ProfileUser extends React.Component {
                 value={email}
                 onChange={this.handleChange}
               />
-              {user.image ? (
-                <DeleteImageUser image={user.image} onClick={this.onDeleteImage} />
-              ) : (
-                <AddImageUser title="Image" onChange={this.onChangeImage} />
-              )}
-              {error && <DisplayError error={error} />}
+              <Image
+                image={user.image}
+                onClick={this.onDeleteImage}
+                onChange={this.onChangeImage}
+              />
+              <DisplayError error={error} />
               <ProfileButton type="submit" onClick={e => this.onUpdateUser(e, updateUser)}>
                 Updat{loading ? 'ing' : 'e'} User
               </ProfileButton>

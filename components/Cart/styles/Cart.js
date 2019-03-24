@@ -8,7 +8,7 @@ export const CartStyles = styled.div`
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: 11;
   display: grid;
   grid-template-rows: auto 1fr auto;
   background: ${props => props.theme.grey[0]};

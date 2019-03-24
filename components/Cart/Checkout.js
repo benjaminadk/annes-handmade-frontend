@@ -62,7 +62,7 @@ export default class Checkout extends React.Component {
             name="Anne's Handmade"
             description={`Order of ${cart.length} item${cart.length === 1 ? '' : 's'}!`}
             image="https://s3-us-west-1.amazonaws.com/shopping-site/assets/buddha-logo.png"
-            panelLabel="Buy Stuff 🤑"
+            panelLabel="Buy Stuff 💎"
             stripeKey={stripeKey}
             currency="USD"
             email={email}

@@ -37,7 +37,7 @@ export default class Sales extends React.Component {
             {(toggleShipped, { loading }) => (
               <Center title="Toggle shipped status">
                 <button onClick={toggleShipped} disabled={loading}>
-                  {loading ? '💬' : props.value ? '👍' : '👎'}
+                  {loading ? '💬' : props.value ? '👍' : '🚫'}
                 </button>
               </Center>
             )}

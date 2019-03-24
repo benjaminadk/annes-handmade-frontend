@@ -15,8 +15,8 @@ function stats(orders) {
   const items = orders.reduce((acc, val) => (acc += val.items.length), 0)
   const total = orders.reduce((acc, val) => (acc += val.total), 0)
   const images = orders.reduce((acc, val) => {
-    val.items.forEach(a => {
-      acc.push(a.images[0])
+    val.items.forEach((a, i) => {
+      acc.push(...a.images)
     })
     return acc
   }, [])

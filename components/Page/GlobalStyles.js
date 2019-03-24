@@ -39,7 +39,7 @@ export default createGlobalStyle`
   #nprogress .bar {
     background: ${darken(0.1, theme.secondary)};
     position: fixed;
-    z-index: 1031;
+    z-index: 10;
     top: 75px;
     left: 0;
     width: 100%;
