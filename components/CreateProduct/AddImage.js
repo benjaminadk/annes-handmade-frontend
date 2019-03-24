@@ -19,7 +19,7 @@ export default function AddImage({ index, title, onChange }) {
               type="file"
               accept="image/*"
               multiple={false}
-              onChange={e => onChange(e, addImage)}
+              onChange={e => onChange(e, addImage, index)}
             />
             <span className="add">{loading ? '💬' : '➕'}</span>
           </div>

@@ -35,23 +35,16 @@ export default class CreateProduct extends React.Component {
     const res = await addImage({
       variables: { filename, filetype }
     })
-    axios({
+    await axios({
       method: 'PUT',
       url: res.data.addImage.url,
       headers: {
         'Content-Type': filetype
       },
-      data: files[0],
-      onUploadProgress: e => {
-        const completed = Math.round((e.loaded * 100) / e.total)
-        if (completed === 100) {
-          setTimeout(() => {
-            this.setState({ [`image${index}`]: res.data.addImage.image })
-            NProgress.done()
-          }, 1000)
-        }
-      }
+      data: files[0]
     })
+    this.setState({ [`image${index}`]: res.data.addImage.image })
+    NProgress.done()
   }
 
   onDeleteImage = async (e, deleteImage, index) => {
