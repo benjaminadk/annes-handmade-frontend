@@ -8,6 +8,7 @@ import { Header, Center } from './styles/Sales'
 import { Column } from '../Inventory/styles/Table'
 import AdminNav from '../CreateProduct/AdminNav'
 import Loading from '../Loading'
+import Head from '../Head'
 import { SALES_QUERY } from '../../apollo/query/sales'
 import { SHIPPED_MUTATION } from '../../apollo/mutation/toggleShipped'
 
@@ -120,6 +121,7 @@ export default class Sales extends React.Component {
           if (loading) return <Loading size={10} message="Loading Sales Data" />
           return (
             <Column>
+              <Head title="Admin" />
               <AdminNav />
               <ReactTable
                 data={data.sales}

@@ -7,6 +7,7 @@ import { Message } from '../styles/Message'
 import { Container } from './styles/ResetPassword'
 import DisplayError from '../DisplayError'
 import Input from '../Register/Input'
+import Head from '../Head'
 import scorePassword from '../../lib/scorePassword'
 
 export default class ResetPassword extends React.Component {
@@ -46,6 +47,7 @@ export default class ResetPassword extends React.Component {
       >
         {(resetPassword, { error, loading, called }) => (
           <Container>
+            <Head title="Reset Password" />
             <Form method="POST" onSubmit={e => this.handleSubmit(e, resetPassword)}>
               <div className="header">Reset Password</div>
               <fieldset disabled={loading} aria-busy={loading}>

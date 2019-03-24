@@ -1,5 +1,5 @@
 import { Query } from 'react-apollo'
-import Head from 'next/head'
+import Head from '../Head'
 import Link from 'next/link'
 import { KeyboardArrowRight } from 'styled-icons/material/KeyboardArrowRight'
 import { KeyboardArrowLeft } from 'styled-icons/material/KeyboardArrowLeft'
@@ -10,9 +10,9 @@ import { PAGINATION_QUERY } from '../../apollo/query/productsCount'
 function populateTitle(page, pages, { variant, bead }) {
   const msg = variant ? variant : bead ? bead : ''
   if (msg) {
-    return `Anne's Handmade | ${msg.replace('_', ' ')}`
+    return msg.replace('_', ' ')
   } else {
-    return `Anne's Handmade | Page ${page} of ${pages}`
+    return `Page ${page} of ${pages}`
   }
 }
 
@@ -49,9 +49,7 @@ export default function Pagination({ page, where }) {
           const pages = Math.ceil(count / perPage)
           return (
             <>
-              <Head>
-                <title>{populateTitle(page, pages, where)}</title>
-              </Head>
+              <Head title={populateTitle(page, pages, where)} />
               <Link
                 href={{
                   pathname: '/products',

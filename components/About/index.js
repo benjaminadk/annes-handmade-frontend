@@ -1,9 +1,11 @@
 import { AboutStyles } from './styles/About'
+import Head from '../Head'
 
 export default class About extends React.Component {
   render() {
     return (
       <AboutStyles>
+        <Head title="About" />
         <div className="top">
           <img
             src="https://s3-us-west-1.amazonaws.com/shopping-site/avatars/anne-taylor-4"

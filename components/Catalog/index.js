@@ -1,6 +1,6 @@
 import React from 'react'
 import Router from 'next/router'
-import Head from 'next/head'
+import Head from '../Head'
 import JewelryTypes from './JewelryTypes'
 import BeadTypes from './BeadTypes'
 
@@ -23,9 +23,7 @@ export default class Catalog extends React.Component {
   render() {
     return (
       <>
-        <Head>
-          <title>Anne's Handmade | Catalog</title>
-        </Head>
+        <Head title="Catalog" />
         <JewelryTypes onClick={this.onProductClick} />
         <BeadTypes onClick={this.onBeadClick} />
       </>

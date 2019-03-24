@@ -1,6 +1,6 @@
 import { Query } from 'react-apollo'
 import { format } from 'date-fns'
-import Head from 'next/head'
+import Head from '../Head'
 import formatMoney from '../../lib/formatMoney'
 import { SINGLE_ORDER_QUERY } from '../../apollo/query/order'
 import Loading from '../Loading'
@@ -14,9 +14,7 @@ export default function Order({ query: { id } }) {
         const order = data.order
         return (
           <>
-            <Head>
-              <title>Anne's Handmade | Order ID: ${id}</title>
-            </Head>
+            <Head title={`Order ID: ${id}`} />
             <OrderStyles data-test="order">
               <div className="content">
                 <Stat>

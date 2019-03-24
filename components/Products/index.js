@@ -1,7 +1,6 @@
 import { Query } from 'react-apollo'
 import { ALL_PRODUCTS_QUERY } from '../../apollo/query/products'
 import { perPage } from '../../config'
-import HeadWithLogo from '../Head/HeadWithLogo'
 import ProductCard from './ProductCard'
 import Pagination from './Pagination'
 import Loading from '../Loading'
@@ -17,7 +16,6 @@ export default function Products({ query, user }) {
   }
   return (
     <Center>
-      <HeadWithLogo />
       <Pagination where={where} page={page} />
       <Query query={ALL_PRODUCTS_QUERY} variables={{ where, skip }}>
         {({ data, loading }) => {

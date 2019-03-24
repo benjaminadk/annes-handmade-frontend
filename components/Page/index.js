@@ -1,9 +1,9 @@
 import styled, { ThemeProvider } from 'styled-components'
 import { lighten } from 'polished'
+import Head from 'next/head'
 import Router from 'next/router'
 import NProgress from 'nprogress'
 import theme from './theme'
-import Meta from './Meta'
 import GlobalStyles from './GlobalStyles'
 import Header from '../Header'
 import Footer from '../Footer'
@@ -33,6 +33,17 @@ const Inner = styled.main`
   }
 `
 
+function GlobalHead() {
+  return (
+    <Head>
+      <title>Anne's Handmade | Home</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta charSet="utf-8" key="utf" />
+      <link rel="shortcut icon" href="/static/favicon.png" />
+    </Head>
+  )
+}
+
 export default class Page extends React.Component {
   componentDidMount() {
     Router.onRouteChangeStart = () => {
@@ -55,6 +66,7 @@ export default class Page extends React.Component {
             if (loading) {
               return (
                 <>
+                  <GlobalHead />
                   <GlobalStyles />
                   <Loading />
                 </>
@@ -63,7 +75,7 @@ export default class Page extends React.Component {
             const user = data ? data.me : null
             return (
               <StyledPage pathname={pathname}>
-                <Meta />
+                <GlobalHead />
                 <GlobalStyles />
                 <Header user={user} />
                 <Inner>
