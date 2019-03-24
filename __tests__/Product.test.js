@@ -44,9 +44,9 @@ describe('<Product/>', () => {
         <Product query={{ id: '123' }} />
       </MockedProvider>
     )
-    await wait()
+    await wait(100)
     wrapper.update()
-    const item = wrapper.find('[data-test="graphql-error"]')
+    const item = wrapper.find('[data-test="error"]')
     expect(item.text()).toContain('Product not found')
     expect(item).toMatchSnapshot()
   })

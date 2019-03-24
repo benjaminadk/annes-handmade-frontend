@@ -18,6 +18,7 @@ exports[`<CreateProduct /> renders and matches snapshot 1`] = `
   height: 5rem;
   text-align: center;
   border: 1px solid #E0E0E0;
+  margin: 0.5rem auto;
   cursor: pointer;
 }
 
@@ -52,6 +53,14 @@ exports[`<CreateProduct /> renders and matches snapshot 1`] = `
   cursor: pointer;
 }
 
+.c2 button svg {
+  width: 2rem;
+  height: 2rem;
+  -webkit-animation: iVXCSc 1s linear infinite;
+  animation: iVXCSc 1s linear infinite;
+  color: #ff4d97;
+}
+
 .c2 span.add {
   width: 5rem;
   height: 5rem;
@@ -72,6 +81,14 @@ exports[`<CreateProduct /> renders and matches snapshot 1`] = `
   border: none;
   font-size: 2rem;
   padding: 0;
+}
+
+.c2 span.add svg {
+  width: 3rem;
+  height: 3rem;
+  -webkit-animation: iVXCSc 1s linear infinite;
+  animation: iVXCSc 1s linear infinite;
+  color: #ff4d97;
 }
 
 .c1 {
@@ -611,7 +628,7 @@ exports[`<CreateProduct /> renders and matches snapshot 1`] = `
                 "rules": Array [
                   "display:grid;grid-template-columns:auto 1fr auto;grid-gap:2rem;justify-items:center;align-items:center;margin-bottom:1rem;.dropzone{width:5rem;height:5rem;text-align:center;border:1px solid ",
                   [Function],
-                  ";cursor:pointer;&:hover{outline:3px solid ",
+                  ";margin:0.5rem auto;cursor:pointer;&:hover{outline:3px solid ",
                   [Function],
                   ";}input[type='file']{display:none;}}span{background:",
                   [Function],
@@ -619,7 +636,33 @@ exports[`<CreateProduct /> renders and matches snapshot 1`] = `
                   [Function],
                   ";padding:0 1rem 0 0.5rem;}img{width:5rem;height:5rem;border:1px solid ",
                   [Function],
-                  ";background:white;}button{background:none;border:none;outline:none;font-size:2rem;margin-right:1rem;cursor:pointer;}span.add{width:5rem;height:5rem;display:flex;justify-content:center;align-items:center;background:none;color:black;border:none;font-size:2rem;padding:0;}",
+                  ";background:white;}button{background:none;border:none;outline:none;font-size:2rem;margin-right:1rem;cursor:pointer;svg{width:2rem;height:2rem;animation:",
+                  Keyframes {
+                    "id": "sc-keyframes-iVXCSc",
+                    "inject": [Function],
+                    "name": "iVXCSc",
+                    "rules": Array [
+                      "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                      "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                    ],
+                    "toString": [Function],
+                  },
+                  " 1s linear infinite;color:",
+                  [Function],
+                  ";}}span.add{width:5rem;height:5rem;display:flex;justify-content:center;align-items:center;background:none;color:black;border:none;font-size:2rem;padding:0;svg{width:3rem;height:3rem;animation:",
+                  Keyframes {
+                    "id": "sc-keyframes-iVXCSc",
+                    "inject": [Function],
+                    "name": "iVXCSc",
+                    "rules": Array [
+                      "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                      "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                    ],
+                    "toString": [Function],
+                  },
+                  " 1s linear infinite;color:",
+                  [Function],
+                  ";}}",
                 ],
               },
               "displayName": "Image__ImageStyles",
@@ -817,7 +860,7 @@ exports[`<CreateProduct /> renders and matches snapshot 1`] = `
                 <div
                   className="dropzone"
                   onClick={[Function]}
-                  title="Image 1"
+                  title="Add Image 1"
                 >
                   <input
                     accept="image/*"
@@ -866,7 +909,7 @@ exports[`<CreateProduct /> renders and matches snapshot 1`] = `
                 "rules": Array [
                   "display:grid;grid-template-columns:auto 1fr auto;grid-gap:2rem;justify-items:center;align-items:center;margin-bottom:1rem;.dropzone{width:5rem;height:5rem;text-align:center;border:1px solid ",
                   [Function],
-                  ";cursor:pointer;&:hover{outline:3px solid ",
+                  ";margin:0.5rem auto;cursor:pointer;&:hover{outline:3px solid ",
                   [Function],
                   ";}input[type='file']{display:none;}}span{background:",
                   [Function],
@@ -874,7 +917,33 @@ exports[`<CreateProduct /> renders and matches snapshot 1`] = `
                   [Function],
                   ";padding:0 1rem 0 0.5rem;}img{width:5rem;height:5rem;border:1px solid ",
                   [Function],
-                  ";background:white;}button{background:none;border:none;outline:none;font-size:2rem;margin-right:1rem;cursor:pointer;}span.add{width:5rem;height:5rem;display:flex;justify-content:center;align-items:center;background:none;color:black;border:none;font-size:2rem;padding:0;}",
+                  ";background:white;}button{background:none;border:none;outline:none;font-size:2rem;margin-right:1rem;cursor:pointer;svg{width:2rem;height:2rem;animation:",
+                  Keyframes {
+                    "id": "sc-keyframes-iVXCSc",
+                    "inject": [Function],
+                    "name": "iVXCSc",
+                    "rules": Array [
+                      "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                      "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                    ],
+                    "toString": [Function],
+                  },
+                  " 1s linear infinite;color:",
+                  [Function],
+                  ";}}span.add{width:5rem;height:5rem;display:flex;justify-content:center;align-items:center;background:none;color:black;border:none;font-size:2rem;padding:0;svg{width:3rem;height:3rem;animation:",
+                  Keyframes {
+                    "id": "sc-keyframes-iVXCSc",
+                    "inject": [Function],
+                    "name": "iVXCSc",
+                    "rules": Array [
+                      "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                      "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                    ],
+                    "toString": [Function],
+                  },
+                  " 1s linear infinite;color:",
+                  [Function],
+                  ";}}",
                 ],
               },
               "displayName": "Image__ImageStyles",
@@ -1072,7 +1141,7 @@ exports[`<CreateProduct /> renders and matches snapshot 1`] = `
                 <div
                   className="dropzone"
                   onClick={[Function]}
-                  title="Image 2"
+                  title="Add Image 2"
                 >
                   <input
                     accept="image/*"

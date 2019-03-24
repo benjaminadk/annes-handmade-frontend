@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { lighten, darken } from 'polished'
 import { rotate } from '../../styles/animations'
 
 export const LoadingStyles = styled.div`

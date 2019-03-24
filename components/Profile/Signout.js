@@ -1,16 +1,23 @@
 import { Mutation } from 'react-apollo'
+import NProgress from 'nprogress'
 import { SIGNOUT_MUTATION } from '../../apollo/mutation/signout'
 import { CURRENT_USER_QUERY } from '../../apollo/query/me'
 import { ProfileStyles, Title, Description, Content, ProfileButton } from './styles/Profile'
 
 export default function Signout() {
-  const onClick = (e, signout) => {
+  const onClick = async (e, signout) => {
+    NProgress.start()
     e.preventDefault()
-    signout()
+    await signout()
+    NProgress.done()
   }
 
   return (
-    <Mutation mutation={SIGNOUT_MUTATION} refetchQueries={[{ query: CURRENT_USER_QUERY }]}>
+    <Mutation
+      mutation={SIGNOUT_MUTATION}
+      refetchQueries={[{ query: CURRENT_USER_QUERY }]}
+      awaitRefetchQueries={true}
+    >
       {(signout, { loading }) => (
         <ProfileStyles>
           <div>

@@ -15,7 +15,8 @@ class GoogleButton extends React.Component {
       .mutate({
         mutation: GOOGLE_SIGNUP_MUTATION,
         variables: { data },
-        refetchQueries: [{ query: CURRENT_USER_QUERY }]
+        refetchQueries: [{ query: CURRENT_USER_QUERY }],
+        awaitRefetchQueries: true
       })
       .catch(console.error)
   }

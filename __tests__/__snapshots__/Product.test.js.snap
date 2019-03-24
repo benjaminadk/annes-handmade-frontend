@@ -2,7 +2,7 @@
 
 exports[`<Product/> displays error when product is not found 1`] = `
 <p
-  data-test="graphql-error"
+  data-test="error"
 >
   Error: 
   Product not found
