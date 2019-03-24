@@ -8,7 +8,7 @@ import Loading from '../Loading'
 import DisplayError from '../DisplayError'
 import { ProductStyles } from './styles/Product'
 
-export default function Product({ query: { id } }) {
+export default function Product({ query: { id }, user }) {
   return (
     <Query query={SINGLE_PRODUCT_QUERY} variables={{ id }}>
       {({ data, loading, error }) => {
@@ -24,7 +24,7 @@ export default function Product({ query: { id } }) {
             <HeadWithProduct product={product} />
             <Thumbnails images={product.images} thumbIndex={thumbIndex} />
             <LargeImage image={product.images[thumbIndex]} />
-            <ProductDetail product={product} />
+            <ProductDetail product={product} user={user} />
           </ProductStyles>
         )
       }}

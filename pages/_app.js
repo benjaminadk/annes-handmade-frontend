@@ -10,6 +10,7 @@ class MyApp extends App {
       pageProps = await Component.getInitialProps(ctx)
     }
     pageProps.query = ctx.query
+    pageProps.pathname = ctx.pathname
     return { pageProps }
   }
   render() {

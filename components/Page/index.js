@@ -1,4 +1,5 @@
 import styled, { ThemeProvider } from 'styled-components'
+import { lighten } from 'polished'
 import Router from 'next/router'
 import NProgress from 'nprogress'
 import theme from './theme'
@@ -10,7 +11,7 @@ import Loading from './Loading'
 import User from '../Wrappers/User'
 
 const StyledPage = styled.div`
-  background: white;
+  background: ${props => (props.pathname === '/' ? lighten(0.2, props.theme.secondary) : 'white')};
   color: ${props => props.theme.black};
 `
 
@@ -46,24 +47,27 @@ export default class Page extends React.Component {
     }
   }
   render() {
+    const { children, pathname } = this.props
     return (
       <ThemeProvider theme={theme}>
         <User>
           {({ data, loading }) => {
             if (loading) {
-              return <>
-              <GlobalStyles/>
-              <Loading />
-              </>
+              return (
+                <>
+                  <GlobalStyles />
+                  <Loading />
+                </>
+              )
             }
             const user = data ? data.me : null
             return (
-              <StyledPage>
+              <StyledPage pathname={pathname}>
                 <Meta />
                 <GlobalStyles />
                 <Header user={user} />
                 <Inner>
-                  {React.Children.map(this.props.children, child =>
+                  {React.Children.map(children, child =>
                     React.cloneElement(child, {
                       user
                     })

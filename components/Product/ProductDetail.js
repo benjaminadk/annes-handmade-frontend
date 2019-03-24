@@ -5,21 +5,31 @@ import { ProductDetailStyles, Title, Description, Price } from './styles/Product
 import { GreenButton } from '../styles/GreenButton'
 import TypeThumb from './TypeThumb'
 import DisplayError from '../DisplayError'
+import Toast from '../Toast'
 import { CURRENT_USER_QUERY } from '../../apollo/query/me'
 import { ADD_TO_CART_MUTATION } from '../../apollo/mutation/addToCart'
 
 export default class ProductDetail extends React.Component {
-  handleAddToCart = (addToCart, user) => {
+  state = {
+    showToast: false,
+    messageToast: ''
+  }
+
+  handleAddToCart = async (addToCart, user, title) => {
     if (!user) {
       Router.push('/signup')
     } else {
-      addToCart()
+      const res = await addToCart()
+      this.setState({ showToast: true, messageToast: `${title} added to Cart!` }, () =>
+        this.setState({ showToast: false })
+      )
     }
   }
 
   render() {
     const {
-      props: { product, user }
+      props: { product, user },
+      state: { showToast, messageToast }
     } = this
     return (
       <Mutation
@@ -30,19 +40,17 @@ export default class ProductDetail extends React.Component {
         {(addToCart, { loading, error }) => (
           <ProductDetailStyles>
             <Title>{product.title}</Title>
-            {error ? (
-              <DisplayError error={error} />
-            ) : (
-              <Description>{product.description}</Description>
-            )}
+            <Description>{product.description}</Description>
             <div className="properties">
               <Price>{formatMoney(product.price)}</Price>
               <TypeThumb variant="product" type={product.variant} />
               <TypeThumb variant="bead" type={product.bead} />
+              <DisplayError error={error} />
             </div>
-            <GreenButton onClick={() => this.handleAddToCart(addToCart, user)}>
-              Add{loading && 'ing'} {product.title} to Cart
+            <GreenButton onClick={() => this.handleAddToCart(addToCart, user, product.title)}>
+              Add{loading && 'ing'} To Cart
             </GreenButton>
+            <Toast show={showToast} message={messageToast} delay={8000} />
           </ProductDetailStyles>
         )}
       </Mutation>
