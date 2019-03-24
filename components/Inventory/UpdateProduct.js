@@ -9,6 +9,7 @@ import formatFilename from '../../lib/formatFilename'
 import { VARIANTS, BEADS } from '../../lib/productHelpers'
 import Input from '../CreateProduct/Input'
 import Image from '../CreateProduct/Image'
+import Toast from '../Toast'
 
 class UpdateProduct extends React.Component {
   state = {
@@ -18,23 +19,25 @@ class UpdateProduct extends React.Component {
     variant: '',
     bead: '',
     price: 0,
-    images: []
+    images: [],
+    showToast: false,
+    messageToast: ''
   }
 
   componentDidMount() {
-    this.setInitialState()
+    this.setProductState()
   }
 
   componentDidUpdate(prevProps) {
     if (!isequal(prevProps.product, this.props.product)) {
-      this.setInitialState()
+      this.setProductState()
     }
     if (NProgress.isStarted()) {
       NProgress.done()
     }
   }
 
-  setInitialState = () => this.setState({ ...this.props.product })
+  setProductState = () => this.setState({ ...this.props.product })
 
   handleChange = ({ target: { name, value } }) => this.setState({ [name]: value })
 
@@ -75,11 +78,14 @@ class UpdateProduct extends React.Component {
     const data = { title, description, variant, bead, price: Number(price) }
     await updateProduct({ variables: { id, data }, refetchQueries: [{ query: INVENTORY_QUERY }] })
     NProgress.done()
+    this.setState({ showToast: true, messageToast: `"${title}" updated successfully!` }, () =>
+      this.setState({ showToast: false })
+    )
   }
 
   render() {
     const {
-      state: { id, title, description, variant, bead, price, images }
+      state: { id, title, description, variant, bead, price, images, showToast, messageToast }
     } = this
     return (
       <Mutation mutation={UPDATE_PRODUCT_MUTATION}>
@@ -146,6 +152,7 @@ class UpdateProduct extends React.Component {
             <UpdateButton type="submit" disabled={loading}>
               Updat{loading ? 'ing' : 'e'} Product
             </UpdateButton>
+            <Toast show={showToast} message={messageToast} delay={8000} />
           </UpdateProductStyles>
         )}
       </Mutation>

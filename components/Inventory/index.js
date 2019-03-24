@@ -10,6 +10,7 @@ import { Column, Sold, Header, EditButton, Price, Images, Button, Total } from '
 import BeadOptions from './BeadOptions'
 import AdminNav from '../CreateProduct/AdminNav'
 import Loading from '../Loading'
+import Toast from '../Toast'
 import { DELETE_PRODUCT_MUTATION } from '../../apollo/mutation/deleteProduct'
 import { INVENTORY_QUERY } from '../../apollo/query/inventory'
 
@@ -17,12 +18,21 @@ export default class Inventory extends React.Component {
   state = {
     isOpen: false,
     images: [],
-    imageIndex: 0
+    imageIndex: 0,
+    showToast: false,
+    messageToast: ''
   }
 
   handleDeleteProduct = async (deleteProduct, title) => {
-    if (confirm(`Permanently delete product ${title}?`)) {
+    if (confirm(`Permanently delete "${title}" ?`)) {
       await deleteProduct()
+      this.setState(
+        {
+          showToast: true,
+          messageToast: `"${title}" deleted successfully!`
+        },
+        () => this.setState({ showToast: false })
+      )
     }
   }
 
@@ -33,11 +43,13 @@ export default class Inventory extends React.Component {
 
   handleLightBoxClose = () => this.setState({ isOpen: false, images: [] })
 
-  handlePrev = () => this.setState({ imageIndex: this.state.imageIndex - 1 })
+  handlePrev = () => this.setState(({ imageIndex }) => ({ imageIndex: imageIndex - 1 }))
 
-  handleNext = () => this.setState({ imageIndex: this.state.imageIndex + 1 })
+  handleNext = () => this.setState(({ imageIndex }) => ({ imageIndex: imageIndex + 1 }))
 
   render() {
+    const { isOpen, imageIndex, images, showToast, messageToast } = this.state
+
     const columns = [
       {
         Header: () => <Header>Sold</Header>,
@@ -171,26 +183,28 @@ export default class Inventory extends React.Component {
                 <AdminNav />
                 <ReactTable
                   data={data.products}
-                  columns={columns}
-                  defaultSorted={[{ id: 'title', asc: true }]}
-                  showPaginationTop
-                  filterable
-                  defaultPageSize={10}
-                  defaultFilterMethod={(filter, row) => String(row[filter.id]) === filter.value}
                   className="-striped -highlight"
-                  previousText={`🠜 Previous`}
+                  collapseOnDataChange={false}
+                  columns={columns}
+                  defaultFilterMethod={(filter, row) => String(row[filter.id]) === filter.value}
+                  defaultPageSize={10}
+                  defaultSorted={[{ id: 'title', asc: true }]}
+                  filterable={true}
                   nextText={`Next 🠞`}
+                  previousText={`🠜 Previous`}
                   rowsText={`products`}
+                  showPaginationTop={true}
                   SubComponent={row => <UpdateProduct product={row.original} index={row.index} />}
                 />
+                <Toast show={showToast} message={messageToast} delay={8000} />
               </Column>
             )
           }}
         </Query>
         <LightBox
-          isOpen={this.state.isOpen}
-          images={this.state.images}
-          currentImage={this.state.imageIndex}
+          isOpen={isOpen}
+          images={images}
+          currentImage={imageIndex}
           backdropClosesModal
           onClose={this.handleLightBoxClose}
           onClickPrev={this.handlePrev}
