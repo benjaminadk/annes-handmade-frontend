@@ -42,7 +42,7 @@ describe('<RequestReset />', () => {
 
     // submit the form
     wrapper.find('form').simulate('submit')
-    await wait()
+    await wait(100)
     wrapper.update()
     expect(wrapper.find('p').text()).toContain('email sent to test@gmail.com')
   })
