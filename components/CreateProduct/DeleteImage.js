@@ -1,4 +1,5 @@
 import { Mutation } from 'react-apollo'
+import { Spinner10 as Spinner } from 'styled-icons/icomoon/Spinner10'
 import { DELETE_IMAGE_MUTATION } from '../../apollo/mutation/deleteImage'
 import { INVENTORY_QUERY } from '../../apollo/query/inventory'
 
@@ -15,7 +16,7 @@ export default function DeleteImage({ image, title, id, index, onClick }) {
       >
         {(deleteImage, { loading }) => (
           <button onClick={e => onClick(e, deleteImage, index)} title="Delete image">
-            {loading ? '💬' : '❌'}
+            {loading ? <Spinner /> : '❌'}
           </button>
         )}
       </Mutation>

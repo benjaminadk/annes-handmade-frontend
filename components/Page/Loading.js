@@ -1,15 +1,7 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import { lighten, darken } from 'polished'
 import { Spinner10 as Spinner } from 'styled-icons/icomoon/Spinner10'
-
-const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-`
+import { rotate } from '../styles/animations'
 
 const LoadingStyles = styled.div`
   width: 100vw;
@@ -36,7 +28,7 @@ export default function Loading() {
   return (
     <LoadingStyles>
       <Spinner />
-      <div className="message">Waking up Heroku Dynos...</div>
+      <div className="message">Waking up Anne's Handmade</div>
     </LoadingStyles>
   )
 }
