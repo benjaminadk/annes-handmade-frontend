@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { frontend } from '../../config'
 
 export default function Meta() {
   return (
