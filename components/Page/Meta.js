@@ -8,7 +8,6 @@ export default function Meta() {
       <link rel="shortcut icon" href="/static/favicon.png" />
       <link rel="stylesheet" type="text/css" href="/static/react-table.css" />
       <title>Anne's Handmade | Home</title>
-      <meta property="fb:app_id" content="2300738536877547" />
     </Head>
   )
 }
