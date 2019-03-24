@@ -811,12 +811,16 @@ Array [
             }
           }
         >
-          <Head>
-            <SideEffect
-              handleStateChange={null}
-              reduceComponentsToState={[Function]}
-            />
-          </Head>
+          <Meta
+            title="NECKLACE"
+          >
+            <Head>
+              <SideEffect
+                handleStateChange={null}
+                reduceComponentsToState={[Function]}
+              />
+            </Head>
+          </Meta>
           <Link
             href={
               Object {
@@ -1269,12 +1273,16 @@ Array [
           }
         }
       >
-        <Head>
-          <SideEffect
-            handleStateChange={null}
-            reduceComponentsToState={[Function]}
-          />
-        </Head>
+        <Meta
+          title="NECKLACE"
+        >
+          <Head>
+            <SideEffect
+              handleStateChange={null}
+              reduceComponentsToState={[Function]}
+            />
+          </Head>
+        </Meta>
         <Link
           href={
             Object {
@@ -1680,12 +1688,16 @@ Array [
         }
       }
     >
-      <Head>
-        <SideEffect
-          handleStateChange={null}
-          reduceComponentsToState={[Function]}
-        />
-      </Head>
+      <Meta
+        title="NECKLACE"
+      >
+        <Head>
+          <SideEffect
+            handleStateChange={null}
+            reduceComponentsToState={[Function]}
+          />
+        </Head>
+      </Meta>
       <Link
         href={
           Object {

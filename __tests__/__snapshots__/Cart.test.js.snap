@@ -9,7 +9,7 @@ Array [
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: 11;
   display: grid;
   grid-template-rows: auto 1fr auto;
   background: #FAFAFA;
@@ -169,7 +169,7 @@ Array [
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "position:fixed;min-width:500px;height:100%;top:0;right:0;bottom:0;z-index:5;display:grid;grid-template-rows:auto 1fr auto;background:",
+              "position:fixed;min-width:500px;height:100%;top:0;right:0;bottom:0;z-index:11;display:grid;grid-template-rows:auto 1fr auto;background:",
               [Function],
               ";box-shadow:0 0 10px 3px rgba(0,0,0,0.2);transform:",
               [Function],
@@ -1647,7 +1647,7 @@ Array [
                                   label="Pay With Card"
                                   locale="auto"
                                   name="Anne's Handmade"
-                                  panelLabel="Buy Stuff 🤑"
+                                  panelLabel="Buy Stuff 💎"
                                   reconfigureOnUpdate={false}
                                   shippingAddress={true}
                                   stripeKey="pk_test_htV5BwONms8PGEJ4RVZgsOgU"
@@ -1730,7 +1730,7 @@ Array [
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: 11;
   display: grid;
   grid-template-rows: auto 1fr auto;
   background: #FAFAFA;
@@ -1887,7 +1887,7 @@ Array [
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
-            "position:fixed;min-width:500px;height:100%;top:0;right:0;bottom:0;z-index:5;display:grid;grid-template-rows:auto 1fr auto;background:",
+            "position:fixed;min-width:500px;height:100%;top:0;right:0;bottom:0;z-index:11;display:grid;grid-template-rows:auto 1fr auto;background:",
             [Function],
             ";box-shadow:0 0 10px 3px rgba(0,0,0,0.2);transform:",
             [Function],
@@ -3365,7 +3365,7 @@ Array [
                                 label="Pay With Card"
                                 locale="auto"
                                 name="Anne's Handmade"
-                                panelLabel="Buy Stuff 🤑"
+                                panelLabel="Buy Stuff 💎"
                                 reconfigureOnUpdate={false}
                                 shippingAddress={true}
                                 stripeKey="pk_test_htV5BwONms8PGEJ4RVZgsOgU"
@@ -3447,7 +3447,7 @@ Array [
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: 11;
   display: grid;
   grid-template-rows: auto 1fr auto;
   background: #FAFAFA;
@@ -5042,7 +5042,7 @@ Array [
                               label="Pay With Card"
                               locale="auto"
                               name="Anne's Handmade"
-                              panelLabel="Buy Stuff 🤑"
+                              panelLabel="Buy Stuff 💎"
                               reconfigureOnUpdate={false}
                               shippingAddress={true}
                               stripeKey="pk_test_htV5BwONms8PGEJ4RVZgsOgU"
@@ -5128,7 +5128,7 @@ Array [
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: 11;
   display: grid;
   grid-template-rows: auto 1fr auto;
   background: #FAFAFA;
@@ -5274,7 +5274,7 @@ Array [
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "position:fixed;min-width:500px;height:100%;top:0;right:0;bottom:0;z-index:5;display:grid;grid-template-rows:auto 1fr auto;background:",
+              "position:fixed;min-width:500px;height:100%;top:0;right:0;bottom:0;z-index:11;display:grid;grid-template-rows:auto 1fr auto;background:",
               [Function],
               ";box-shadow:0 0 10px 3px rgba(0,0,0,0.2);transform:",
               [Function],
@@ -5605,7 +5605,7 @@ Array [
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: 11;
   display: grid;
   grid-template-rows: auto 1fr auto;
   background: #FAFAFA;
@@ -5748,7 +5748,7 @@ Array [
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
-            "position:fixed;min-width:500px;height:100%;top:0;right:0;bottom:0;z-index:5;display:grid;grid-template-rows:auto 1fr auto;background:",
+            "position:fixed;min-width:500px;height:100%;top:0;right:0;bottom:0;z-index:11;display:grid;grid-template-rows:auto 1fr auto;background:",
             [Function],
             ";box-shadow:0 0 10px 3px rgba(0,0,0,0.2);transform:",
             [Function],
@@ -6078,7 +6078,7 @@ Array [
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: 11;
   display: grid;
   grid-template-rows: auto 1fr auto;
   background: #FAFAFA;
