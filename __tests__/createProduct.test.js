@@ -1,10 +1,7 @@
 import { MockedProvider } from 'react-apollo/test-utils'
-import axios from 'axios'
 import wait from 'waait'
-import NProgress from 'nprogress'
 import { mountWithTheme, createEvent, fakeProduct } from '../lib/testUtils'
 import { CREATE_PRODUCT_MUTATION } from '../apollo/mutation/createProduct'
-import { ADD_IMAGE_MUTATION } from '../apollo/mutation/addImage'
 import CreateProduct from '../components/CreateProduct'
 
 jest.mock('axios')
@@ -56,7 +53,7 @@ describe('<CreateProduct />', () => {
     const component = wrapper.find('CreateProduct')
     const instance = component.instance()
     instance.onChangeImage(event, addImageMock, 1)
-    await wait(1500)
+    await wait()
     expect(addImageMock).toHaveBeenCalled()
     expect(component.state().image1).toBe('image.jpg')
   })

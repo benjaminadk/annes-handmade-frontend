@@ -7,23 +7,25 @@ import AdminNav from './AdminNav'
 import DisplayError from '../DisplayError'
 import Image from './Image'
 import Input from './Input'
+import Toast from '../Toast'
 import { VARIANTS, BEADS } from '../../lib/productHelpers'
 import formatFilename from '../../lib/formatFilename'
 import { CreateProductStyles, CreateButton } from './styles/CreateProduct'
 import { CREATE_PRODUCT_MUTATION } from '../../apollo/mutation/createProduct'
-
-const initialState = {
-  title: '',
-  description: '',
-  price: 0,
-  variant: 'NECKLACE',
-  bead: 'RED_JASPER',
-  image1: '',
-  image2: ''
-}
+import { ALL_PRODUCTS_QUERY } from '../../apollo/query/products'
+import { INVENTORY_QUERY } from '../../apollo/query/inventory'
 
 export default class CreateProduct extends React.Component {
-  state = { ...initialState }
+  state = {
+    title: '',
+    description: '',
+    price: 0,
+    variant: 'NECKLACE',
+    bead: 'RED_JASPER',
+    image1: '',
+    image2: '',
+    showToast: false
+  }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value })
 
@@ -59,28 +61,47 @@ export default class CreateProduct extends React.Component {
 
   handleSubmit = async (e, createProduct) => {
     e.preventDefault()
-    const data = this.state
-    const images = []
-    if (data.image1) images.push(data.image1)
-    if (data.image2) images.push(data.image2)
-    delete data.image1
-    delete data.image2
-    data.price = Number(data.price)
-    data.images = { set: images }
+    const { title, description, variant, bead, price, image1, image2 } = this.state
+    const set = []
+    if (image1) set.push(image1)
+    if (image2) set.push(image2)
+    const data = {
+      title,
+      description,
+      variant,
+      bead,
+      price: Number(price),
+      images: { set }
+    }
     await createProduct({
       variables: { data }
     })
-    this.setState(initialState)
+    this.setState(
+      {
+        title: '',
+        description: '',
+        variant: 'NECKLACE',
+        bead: 'RED_JASPER',
+        price: 0,
+        image1: '',
+        image2: '',
+        showToast: true
+      },
+      () => this.setState({ showToast: false })
+    )
   }
 
   render() {
     const {
-      state: { title, description, price, variant, bead, image1, image2 }
+      state: { title, description, price, variant, bead, image1, image2, showToast }
     } = this
     return (
       <Column>
         <AdminNav />
-        <Mutation mutation={CREATE_PRODUCT_MUTATION}>
+        <Mutation
+          mutation={CREATE_PRODUCT_MUTATION}
+          refetchQueries={[{ query: ALL_PRODUCTS_QUERY }, { query: INVENTORY_QUERY }]}
+        >
           {(createProduct, { loading, error }) => (
             <CreateProductStyles
               data-test="create-product"
@@ -143,6 +164,7 @@ export default class CreateProduct extends React.Component {
             </CreateProductStyles>
           )}
         </Mutation>
+        <Toast show={showToast} message="Product created successfully!" delay={8000} />
       </Column>
     )
   }
