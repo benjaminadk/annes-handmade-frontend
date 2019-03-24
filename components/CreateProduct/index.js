@@ -8,7 +8,6 @@ import DisplayError from '../DisplayError'
 import Image from './Image'
 import Input from './Input'
 import Toast from '../Toast'
-import Head from '../Head'
 import { VARIANTS, BEADS } from '../../lib/productHelpers'
 import formatFilename from '../../lib/formatFilename'
 import { CreateProductStyles, CreateButton } from './styles/CreateProduct'
@@ -98,7 +97,6 @@ export default class CreateProduct extends React.Component {
     } = this
     return (
       <Column>
-        <Head title="Admin" />
         <AdminNav />
         <Mutation
           mutation={CREATE_PRODUCT_MUTATION}

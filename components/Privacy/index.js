@@ -1,10 +1,8 @@
 import { PrivacyStyles } from './styles/Privacy'
-import Head from '../Head'
 
 export default function Privacy() {
   return (
     <PrivacyStyles>
-      <Head title="Privacy" />
       <div className="content">
         <h1>Privacy Policy</h1>
         <p>

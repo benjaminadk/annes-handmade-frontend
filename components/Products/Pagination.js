@@ -1,5 +1,4 @@
 import { Query } from 'react-apollo'
-import Head from '../Head'
 import Link from 'next/link'
 import { KeyboardArrowRight } from 'styled-icons/material/KeyboardArrowRight'
 import { KeyboardArrowLeft } from 'styled-icons/material/KeyboardArrowLeft'
@@ -49,7 +48,6 @@ export default function Pagination({ page, where }) {
           const pages = Math.ceil(count / perPage)
           return (
             <>
-              <Head title={populateTitle(page, pages, where)} />
               <Link
                 href={{
                   pathname: '/products',

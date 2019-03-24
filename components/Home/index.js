@@ -1,11 +1,9 @@
 import { withRouter } from 'next/router'
 import { Container, Top, Middle, Headline, SubHeadline, Action } from './styles/Home'
-import Head from '../Head'
 
 function Home({ router }) {
   return (
     <Container>
-      <Head title="Home" />
       <Top>
         <Headline>Anne's Handmade</Headline>
         <SubHeadline>One of a kind necklaces, bracelets and earrings</SubHeadline>

@@ -1,7 +1,9 @@
 import App, { Container } from 'next/app'
+import NextSeo from 'next-seo'
 import Page from '../components/Page'
 import { ApolloProvider } from 'react-apollo'
 import withData from '../lib/withData'
+import SEO from '../next-seo.config'
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -18,6 +20,7 @@ class MyApp extends App {
 
     return (
       <Container>
+        <NextSeo config={SEO} />
         <ApolloProvider client={apollo}>
           <Page {...pageProps}>
             <Component {...pageProps} />

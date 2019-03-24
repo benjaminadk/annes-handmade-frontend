@@ -4,7 +4,6 @@ import Profile from '../Profile'
 import Signin from './Signin'
 import Signup from './Signup'
 import ResetRequest from './ResetRequest'
-import Head from '../Head'
 import { SIGNUP_QUERY } from '../../apollo/query/showSignup'
 import { TOGGLE_SHOW_SIGNUP_MUTATION } from '../../apollo/mutation/toggleSignup'
 import { RegisterStyles } from './styles/Register'
@@ -25,21 +24,18 @@ export default function Register({ user }) {
         } else if (showSignup === 'signup') {
           return (
             <RegisterStyles>
-              <Head title="Sign Up" />
               <Signup toggleSignup={toggleSignup} />
             </RegisterStyles>
           )
         } else if (showSignup === 'signin') {
           return (
             <RegisterStyles>
-              <Head title="Sign In" />
               <Signin toggleSignup={toggleSignup} />
             </RegisterStyles>
           )
         } else {
           return (
             <RegisterStyles>
-              <Head title="Request New Password" />
               <ResetRequest toggleSignup={toggleSignup} />
             </RegisterStyles>
           )

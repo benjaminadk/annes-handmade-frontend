@@ -11,7 +11,6 @@ import BeadOptions from './BeadOptions'
 import AdminNav from '../CreateProduct/AdminNav'
 import Loading from '../Loading'
 import Toast from '../Toast'
-import Head from '../Head'
 import { DELETE_PRODUCT_MUTATION } from '../../apollo/mutation/deleteProduct'
 import { INVENTORY_QUERY } from '../../apollo/query/inventory'
 
@@ -176,7 +175,6 @@ export default class Inventory extends React.Component {
 
     return (
       <>
-        <Head title="Admin" />
         <Query query={INVENTORY_QUERY}>
           {({ data, loading }) => {
             if (loading) return <Loading size={10} message="Loading Inventory Table" />

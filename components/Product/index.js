@@ -4,7 +4,6 @@ import ProductDetail from './ProductDetail'
 import Thumbnails from './Thumbnails'
 import LargeImage from './LargeImage'
 import Loading from '../Loading'
-import Head from '../Head'
 import DisplayError from '../DisplayError'
 import { ProductStyles } from './styles/Product'
 
@@ -21,7 +20,6 @@ export default function Product({ query: { id }, user }) {
         const { product, thumbIndex } = data
         return (
           <ProductStyles>
-            <Head product={product} title={product.title} />
             <Thumbnails images={product.images} thumbIndex={thumbIndex} />
             <LargeImage image={product.images[thumbIndex]} />
             <ProductDetail product={product} user={user} />

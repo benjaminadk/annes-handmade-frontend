@@ -1,10 +1,8 @@
 import { ShippingStyles } from './styles/Shipping'
-import Head from '../Head'
 
 export default function Shipping() {
   return (
     <ShippingStyles>
-      <Head title="Shipping" />
       <div className="content">
         <h1>Shipping Policy</h1>
         <p>

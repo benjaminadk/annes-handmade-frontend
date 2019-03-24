@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { formatDistance } from 'date-fns'
 import formatMoney from '../../lib/formatMoney'
 import Loading from '../Loading'
-import Head from '../Head'
 import { OrderStyle, OrderTitle, OrderGrid, OrderItem } from './styles/Orders'
 import { USER_ORDERS_QUERY } from '../../apollo/query/orders'
 
@@ -15,7 +14,6 @@ export default function Orders() {
         const orders = data.orders
         return (
           <OrderStyle>
-            <Head title="Orders" />
             <OrderTitle>Order History</OrderTitle>
             <OrderGrid>
               {orders.map(order => (
