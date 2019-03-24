@@ -23,6 +23,7 @@ export default function HeadWithLogo() {
       <meta property="og:image:type" content="image/png" />
       <meta property="og:site_name" content="Anne's Handmade" />
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@BenjaminBrooke3" />
     </Head>
   )
 }
