@@ -1,12 +1,16 @@
 export default {
-  title: "Anne's Handmade Jewelry",
-  description: 'Handmade, one-of-a-kind jewelry @ affordable prices. Check us out today!',
+  titleTemplate: `Anne's Handmade | %s`,
+  title: 'Home',
+  description: 'One of a kind, handmade jewelry @ affordable prices. 💎',
   canonical: 'https://anneshandmade.herokuapp.com/',
+  facebook: {
+    appId: '2300738536877547'
+  },
   openGraph: {
     type: 'website',
     url: 'https://anneshandmade.herokuapp.com/',
-    title: "Anne's Handmade Jewelry",
-    description: 'Handmade, one-of-a-kind jewelry @ affordable prices. Check us out today!',
+    title: "Anne's Handmade | Home",
+    description: 'One of a kind, handmade jewelry @ affordable prices. 💎',
     site_name: "Anne's Handmade",
     images: [
       {

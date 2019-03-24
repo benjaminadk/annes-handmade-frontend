@@ -1,4 +1,5 @@
 import { Query } from 'react-apollo'
+import NextSeo from 'next-seo'
 import { SINGLE_PRODUCT_QUERY } from '../../apollo/query/product'
 import ProductDetail from './ProductDetail'
 import Thumbnails from './Thumbnails'
@@ -20,6 +21,22 @@ export default function Product({ query: { id }, user }) {
         const { product, thumbIndex } = data
         return (
           <ProductStyles>
+            <NextSeo
+              config={{
+                title: product.title,
+                openGraph: {
+                  title: `Anne's Handmade | ${product.title}`,
+                  images: [
+                    {
+                      url: product.images[0],
+                      width: 800,
+                      height: 800,
+                      alt: product.title
+                    }
+                  ]
+                }
+              }}
+            />
             <Thumbnails images={product.images} thumbIndex={thumbIndex} />
             <LargeImage image={product.images[thumbIndex]} />
             <ProductDetail product={product} user={user} />
