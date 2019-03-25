@@ -24,8 +24,10 @@ export default function Product({ query: { id }, user }) {
             <NextSeo
               config={{
                 title: product.title,
+                canonical: `https://anneshandmade.herokuapp.com/product?id=${id}`,
                 openGraph: {
                   title: `Anne's Handmade | ${product.title}`,
+                  url: `https://anneshandmade.herokuapp.com/product?id=${id}`,
                   images: [
                     {
                       url: product.images[0],
