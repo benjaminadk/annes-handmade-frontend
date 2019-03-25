@@ -26,7 +26,6 @@ export default function Product({ query: { id }, user }) {
                 title: product.title,
                 openGraph: {
                   title: `Anne's Handmade | ${product.title}`,
-                  url: `https://anneshandmade.herokuapp.com/product?id=${product.id}`,
                   images: [
                     {
                       url: product.images[0],
