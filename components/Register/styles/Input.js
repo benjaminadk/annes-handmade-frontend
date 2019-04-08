@@ -3,6 +3,7 @@ import { darken } from 'polished'
 import media from '../../styles/media'
 
 export const InputStyles = styled.label`
+  position: relative;
   display: block;
   margin-bottom: 2rem;
   input,
@@ -18,5 +19,11 @@ export const InputStyles = styled.label`
     ${media.phone`
       width: ${props => props.width || '100%'};
     `}
+  }
+  .toggle {
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    cursor: pointer;
   }
 `

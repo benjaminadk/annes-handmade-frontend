@@ -13,10 +13,14 @@ export default class Signup extends React.Component {
     name: '',
     email: '',
     password: '',
+    passwordType: 'password',
     pwd: 0
   }
 
-  handlePassword = debounce(value => this.setState({ pwd: scorePassword(value) }), 1000)
+  handlePassword = debounce(
+    value => this.setState({ pwd: scorePassword(value) }),
+    1000
+  )
 
   handleChange = e => {
     const { name, value } = e.target
@@ -34,9 +38,14 @@ export default class Signup extends React.Component {
 
   toggleForm = show => this.props.toggleSignup({ variables: { show } })
 
+  togglePasswordType = () =>
+    this.setState(({ passwordType }) => ({
+      passwordType: passwordType === 'password' ? 'text' : 'password'
+    }))
+
   render() {
     const {
-      state: { email, name, password, pwd }
+      state: { email, name, password, passwordType, pwd }
     } = this
     return (
       <Mutation
@@ -45,39 +54,44 @@ export default class Signup extends React.Component {
         refetchQueries={[{ query: CURRENT_USER_QUERY }]}
       >
         {(signup, { error, loading }) => (
-          <Form method="POST" onSubmit={e => this.handleSubmit(e, signup)} error={error}>
-            <div className="header">Sign Up</div>
+          <Form
+            method='POST'
+            onSubmit={e => this.handleSubmit(e, signup)}
+            error={error}
+          >
+            <div className='header'>Sign Up</div>
             <fieldset disabled={loading} aria-busy={loading}>
-              <div className="switch" onClick={() => this.toggleForm('signin')}>
+              <div className='switch' onClick={() => this.toggleForm('signin')}>
                 Have an account? 👆 Sign In.
               </div>
               <Input
-                type="email"
-                label="Email"
-                name="email"
+                type='email'
+                label='Email'
+                name='email'
                 value={email}
                 onChange={this.handleChange}
               />
               <Input
-                type="name"
-                label="Name"
-                name="name"
+                type='name'
+                label='Name'
+                name='name'
                 value={name}
                 onChange={this.handleChange}
               />
               <Input
-                type="password"
-                label="Password"
-                name="password"
+                type={passwordType}
+                label='Password'
+                name='password'
                 value={password}
                 pwd={pwd}
                 showQuality
+                togglePasswordType={this.togglePasswordType}
                 onChange={this.handleChange}
               />
               <DisplayError error={error} />
-              <div className="actions">
-                <FormButton type="submit">Sign Up</FormButton>
-                <GoogleButton mode="signup" />
+              <div className='actions'>
+                <FormButton type='submit'>Sign Up</FormButton>
+                <GoogleButton mode='signup' />
               </div>
             </fieldset>
           </Form>
