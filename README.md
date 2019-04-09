@@ -12,6 +12,8 @@ Handmade jewelry made with love.
   - [Payment Processing](#payment-processing)
   - [Pagination](#pagination)
   - [Admin Dashboard](#admin-dashboard)
+  - [SEO](#seo)
+  - [Mobile Friendly](#mobile-friendly)
 - [Backend Features](#backend-features)
   - [Apollo Server](#apollo-server)
   - [Prisma Database](#prisma-database)
@@ -38,11 +40,11 @@ _Styled Components_ addresses the styling needs of the entire site.
 
 - Animation created with `keyframes` helper function. When a category is hovered an overlay describing the category slides into view. There is also an enlargement and popout effect.
 
-<img src="https://s3-us-west-1.amazonaws.com/shopping-site/assets/readme-09.gif" width="400">
+<img src="https://s3-us-west-1.amazonaws.com/shopping-site/assets/readme-09.gif" width="200">
 
 - Password input component which displays the quality of the password as it is typed. Using regular expressions and a scoring algorithm to calculate props sent to a styled component.
 
-<img src="https://s3-us-west-1.amazonaws.com/shopping-site/assets/readme-10.gif" width="400">
+<img src="https://s3-us-west-1.amazonaws.com/shopping-site/assets/readme-10.gif" width="300">
 
 ### Product Search
 
@@ -73,6 +75,37 @@ Admin has ability to add/edit/delete products, including uploading images and to
 - Inventory data filtered by products containing the test "buddha" with a product type of "Necklace" and a bead type of "Black Onyx". The optional update product sub-table is open where any product information or image can be changed by the admin.
 
 <img src="https://s3-us-west-1.amazonaws.com/shopping-site/assets/readme-07.png" width="800">
+
+### SEO
+
+Dynamically render various tags with _Next SEO_ based on the page being viewed. Offer a unique image and title for each product as well as an overall representation of the site with brand image. The result is that the site as a whole or a specific product can be shared on social media.
+
+- Overall site social media post
+
+<img src="https://s3-us-west-1.amazonaws.com/shopping-site/assets/readme-16.png" width="600">
+
+- Product social media post
+
+<img src="https://s3-us-west-1.amazonaws.com/shopping-site/assets/readme-15.png" width="600">
+
+### Mobile Friendly
+
+Media queries restyle or add/remove components to look good on any size screen - mobile, tablet or desktop.
+
+- Mobile (iPhone 6/7/8 Plus)
+- Layout has a vertical alignment and the Header is simplified, omitting Search and other text.
+
+<img src="https://s3-us-west-1.amazonaws.com/shopping-site/assets/readme-17.png" width="400">
+
+- Tablet (iPad)
+- Layout has a vertical alignment and the Header includes more features.
+
+<img src="https://s3-us-west-1.amazonaws.com/shopping-site/assets/readme-18.png" width="600">
+
+- Desktop
+- Layout has a horizontal alignment as well as vertical, and the Header includes all features.
+
+<img src="https://s3-us-west-1.amazonaws.com/shopping-site/assets/readme-19.png" width="800">
 
 ## Backend Features
 

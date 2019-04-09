@@ -11,7 +11,8 @@ import Loading from './Loading'
 import User from '../Wrappers/User'
 
 const StyledPage = styled.div`
-  background: ${props => (props.pathname === '/' ? lighten(0.2, props.theme.secondary) : 'white')};
+  background: ${props =>
+    props.pathname === '/' ? lighten(0.2, props.theme.secondary) : 'white'};
   color: ${props => props.theme.black};
 `
 
@@ -36,11 +37,10 @@ const Inner = styled.main`
 function GlobalHead() {
   return (
     <Head>
-      <title>Anne's Handmade | Home</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta charSet="utf-8" key="utf" />
-      <link rel="shortcut icon" href="/static/favicon.png" />
-      <link rel="stylesheet" type="text/css" href="/static/react-table.css" />
+      <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <meta charSet='utf-8' />
+      <link rel='shortcut icon' href='/static/favicon.png' />
+      <link rel='stylesheet' type='text/css' href='/static/react-table.css' />
     </Head>
   )
 }
