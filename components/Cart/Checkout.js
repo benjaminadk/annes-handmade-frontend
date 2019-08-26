@@ -42,6 +42,8 @@ export default class Checkout extends React.Component {
       }
     })
 
+    NProgress.done()
+
     await toggleCart()
 
     Router.push({
@@ -61,10 +63,10 @@ export default class Checkout extends React.Component {
             amount={calcTotalPrice(cart, 0.08)}
             name="Anne's Handmade"
             description={`Order of ${cart.length} item${cart.length === 1 ? '' : 's'}!`}
-            image="https://s3-us-west-1.amazonaws.com/shopping-site/assets/buddha-logo.png"
-            panelLabel="Buy Stuff 💎"
+            image='https://s3-us-west-1.amazonaws.com/shopping-site/assets/buddha-logo.png'
+            panelLabel='Buy Stuff 💎'
             stripeKey={stripeKey}
-            currency="USD"
+            currency='USD'
             email={email}
             shippingAddress
             billingAddress

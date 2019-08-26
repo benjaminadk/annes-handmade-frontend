@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Query } from 'react-apollo'
 import NextSeo from 'next-seo'
 import { SINGLE_PRODUCT_QUERY } from '../../apollo/query/product'
