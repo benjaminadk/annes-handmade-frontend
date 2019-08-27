@@ -4,7 +4,7 @@ export const perPage = 8
 
 export const frontend = isDev ? 'http://localhost:4000' : 'http://anneshandmade.com'
 
-export const backend = isDev ? 'http://localhost:4001/graphql' : 'http://anneshandmade.com/graphql'
+export const backend = isDev ? 'http://localhost:4001/graphql' : '/graphql'
 
 export const stripeKey = isDev
   ? 'pk_test_htV5BwONms8PGEJ4RVZgsOgU'

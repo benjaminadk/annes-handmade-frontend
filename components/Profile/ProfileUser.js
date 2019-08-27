@@ -83,7 +83,7 @@ class ProfileUser extends React.Component {
     return (
       <Mutation
         mutation={UPDATE_USER_MUTATION}
-        variables={{ id: user.id, data: this.state }}
+        variables={{ id: user.id, name, email }}
         refetchQueries={[{ query: CURRENT_USER_QUERY }]}
       >
         {(updateUser, { loading, error }) => (
@@ -94,18 +94,18 @@ class ProfileUser extends React.Component {
             </div>
             <Content>
               <Input
-                type="text"
-                width="90%"
-                name="name"
-                label="Name"
+                type='text'
+                width='90%'
+                name='name'
+                label='Name'
                 value={name}
                 onChange={this.handleChange}
               />
               <Input
-                type="email"
-                width="90%"
-                name="email"
-                label="Email"
+                type='email'
+                width='90%'
+                name='email'
+                label='Email'
                 value={email}
                 onChange={this.handleChange}
               />
@@ -115,7 +115,7 @@ class ProfileUser extends React.Component {
                 onChange={this.onChangeImage}
               />
               <DisplayError error={error} />
-              <ProfileButton type="submit" onClick={e => this.onUpdateUser(e, updateUser)}>
+              <ProfileButton type='submit' onClick={e => this.onUpdateUser(e, updateUser)}>
                 Updat{loading ? 'ing' : 'e'} User
               </ProfileButton>
             </Content>
